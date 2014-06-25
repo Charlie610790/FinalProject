@@ -251,6 +251,11 @@ a {
 
 }
 
+.teamPage {
+    height: 200px;
+
+}
+
 .teamCity {
     display: block;
     margin-top: 3px;
@@ -294,6 +299,13 @@ a {
     margin-left: 0px;
     background-size: cover;
     background-image: url("http://s7d2.scene7.com/is/image/Fathead/lgo_mlb_boston_red_sox?layer=comp&fit=constrain&hei=350&wid=350&fmt=png-alpha&qlt=75,0&op_sharpen=1&resMode=bicub&op_usm=0.0,0.0,0,0&iccEmbed=0");
+}
+
+.logoTeamPage {
+    margin-top: 0px;
+    height: 70px;
+    width: 70px;
+
 }
 
 .redSox {
@@ -492,6 +504,8 @@ a {
     transition: all 0.1s;
 }
 
+
+
 .beenThereButton {
     float: right;
     margin-top: 0px;
@@ -512,6 +526,28 @@ a {
     transition: all 0.1s;
     border-radius: 3px;
 
+}
+
+.teamPageButton {
+    margin-top: 150px;
+
+}
+
+
+.teamInfo {
+    display: block;
+    height: 100px;
+    margin: 0px auto;
+    background-color: lightgray;
+    font-size: 30px;
+    line-height: 100px;
+    padding-left: 10px;
+    font-size: 35px;
+    font-family: Helvetica;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    border-bottom: 10px solid gray;
+    text-align: center;
 }
 
 @media screen and (max-width: 400px) {
