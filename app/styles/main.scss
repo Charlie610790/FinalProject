@@ -7,6 +7,79 @@ body {
     color: #333;
     margin: 0px;
 }
+a {
+    color: white;
+    text-decoration: none;
+
+}
+
+.userBarIndex {
+    display: block;
+    height: 125px;
+    background-color: gray;
+}
+
+.userBar {
+    display: block;
+    height: 60px;
+    background-color: gray;
+}
+
+
+.userAvatarIndex {
+    float: right;
+    height: 50px;
+    width: 50px;
+    margin-top:70px;
+    background-size: 50px 50px;
+    background-image: url("http://www.ultimate-guitar.com/forum/customavatars/9/6/avatar2041469_1.gif?u=2041469&dateline=1312943518");
+    margin-right: 15px;
+
+}
+
+.userAvatar {
+    float: right;
+    height: 50px;
+    width: 50px;
+    background-size: 50px 50px;
+    background-image: url("http://www.ultimate-guitar.com/forum/customavatars/9/6/avatar2041469_1.gif?u=2041469&dateline=1312943518");
+    margin-right: 15px;
+
+}
+
+.username {
+    float: right;
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    margin-right: 15px;
+}
+
+.usernameIndex {
+    float: right;
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 70px;
+    margin-right: 15px;
+}
+
+.back {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 15px;
+}
+
+.backIndex {
+    float: left;
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 70px;
+    margin-left: 15px;
+}
 
 .header {
     display: block;
@@ -26,6 +99,8 @@ body {
     margin-top: 14px;
     font-size: 32px;
     color: white;
+    text-shadow: 2px 2px 2px #5E626B;
+
 
 }
 
@@ -43,7 +118,6 @@ body {
     display: block;
     height: 300px;
     margin: 0px auto;
-    background-color: red;
     font-size: 18px;
     padding-left: 10px;
     font-size: 35px;
@@ -58,6 +132,8 @@ body {
     margin-top: 250px;
     margin-right: 15px;
     float: right;
+    text-shadow: 2px 2px 2px #5E626B;
+
 }
 
 .myStadiums {
@@ -80,6 +156,8 @@ body {
     background-image: url("http://www.nflwallpaperhd.com/wp-content/uploads/2013/10/Atlanta-Falcons-Stadium-.jpg");
     cursor: pointer;    
     padding-top: 5px;
+    border-bottom: none;
+
 
 }
 
@@ -88,7 +166,6 @@ body {
     background-image: url("http://thesportsfather.files.wordpress.com/2012/05/img_0792.jpg");
     cursor: pointer;     
     padding-top: 5px;
-    border-bottom: none;
 
 
 }
@@ -97,12 +174,12 @@ body {
 
 .sportHeader {
     display: block;
-    height: 60px;
+    height: 40px;
     margin: 0px auto;
     background-color: black;
     font-size: 18px;
     padding-left: 10px;
-    padding-top: 80px;
+    padding-top: 0px;
     font-size: 35px;
     font-family: Helvetica;
     color: white;
@@ -128,11 +205,26 @@ body {
 
 }
 
+.sportsDivision {
+    display: block;
+    height: 100px;
+    margin: 0px auto;
+    background-color: lightgray;
+    font-size: 50px;
+    line-height: 100px;
+    padding-left: 10px;
+    font-family: Helvetica;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    border-bottom: 10px solid gray;
+    text-align: center;
+
+}
+
 .teamImage {
     display: block;
     height: 300px;
     margin: 0px auto;
-    background-color: red;
     font-size: 18px;
     padding-left: 10px;
     font-size: 35px;
@@ -148,12 +240,34 @@ body {
     margin-top: 3px;
     margin-left: 5px;
     font-size: 40px;
+    text-shadow: 2px 2px 2px #5E626B;
 }
 
 .teamName {
     display: block;
     font-size: 60px;
     margin-left: 4px;
+    text-shadow: 2px 2px 2px #5E626B;
+}
+///
+///Baseball
+///MLB
+.bravesLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("http://www.ootpdevelopments.com/board/attachments/ootp-mods-logos-graphics-html/184838d1272028778-2010-mlb-primary-logos-pack-atlanta_braves_ebebeb_003366.png");
+}
+
+.braves {
+    background-size: cover;
+    background-image: url("http://www.launchphotography.com/Turner_Field_panorama.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+
 }
 
 .redSoxLogo {
@@ -166,6 +280,14 @@ body {
     background-image: url("http://s7d2.scene7.com/is/image/Fathead/lgo_mlb_boston_red_sox?layer=comp&fit=constrain&hei=350&wid=350&fmt=png-alpha&qlt=75,0&op_sharpen=1&resMode=bicub&op_usm=0.0,0.0,0,0&iccEmbed=0");
 }
 
+.redSox {
+    padding-top: 5px;
+    background-size: cover;
+    background-image: url("http://upload.wikimedia.org/wikipedia/commons/0/01/Fenway_from_Legend's_Box.jpg");
+    cursor: pointer;
+}
+
+
 .yankeesLogo {
     display: inline-block;
     height: 100px;
@@ -176,29 +298,6 @@ body {
     background-image: url("http://www.rtbaseballweb.org/userfiles/image/New-York_Yankees(1).png");
 }
 
-.stadiumName {
-    display: inline-block;
-    font-size: 40px;
-    
-}
-
-
-
-.redSox {
-    padding-top: 5px;
-    background-size: cover;
-    background-image: url("http://upload.wikimedia.org/wikipedia/commons/0/01/Fenway_from_Legend's_Box.jpg");
-    cursor: pointer;
-}
-
-.braves {
-    background-size: cover;
-    background-image: url("http://www.launchphotography.com/Turner_Field_panorama.jpg");
-    cursor: pointer;
-    padding-top: 5px;
-
-}
-
 .yankees {
     background-size: cover;
     background-image: url("http://populous.com/wp-content/uploads/2012/02/YankeeStadium-NewYork-SeatingBowl-990x442.jpeg");
@@ -207,14 +306,150 @@ body {
 
 }
 
-.left {
-    float: left;
-    
+.raysLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("https://silentarchimedes.files.wordpress.com/2008/09/rays.png");
+}
+
+.rays {
+    background-size: cover;
+    background-image: url("http://mlblogscookandsonbats.files.wordpress.com/2011/09/35-tropicana-field-panorama-section134.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+
+}
+
+///
+///Baseball
+///A
+
+.driveLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("http://www.99sportslogos.com/wp-content/uploads/2013/02/Greenville-Drive-Logo.gif");
+}
+
+.Drive {
+    padding-top: 5px;
+    background-size: cover;
+    background-image: url("http://266002866.r.lightningbase-cdn.com/wp-content/uploads/2013/05/Greenville-Drive-graphic.jpg");
+    cursor: pointer;
 }
 
 
-.teamcenter {
-    
+///
+///Fotball
+///NFL
+.falconsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("http://img2.wikia.nocookie.net/__cb20111227211854/madden/images/8/82/Atlanta_Falcons_Logo.png");
+}
+
+.falcons {
+    padding-top: 5px;
+    background-size: cover;
+    background-image: url("http://www.nflwallpaperhd.com/wp-content/uploads/2013/10/Atlanta-Falcons-Stadium-.jpg");
+    cursor: pointer;
+}
+
+.packersLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("http://nitrografixx.com/nfllogos/full/Green_Bay_Packers_Logo.png");
+}
+
+.packers {
+    padding-top: 5px;
+    background-size: cover;
+    background-image: url("http://www.danleysoundlabs.com/danley/wp-content/uploads/2012/06/Lambeau_Crowd1-e1364919790413.jpg");
+    cursor: pointer;
+}
+
+.buccaneersLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("http://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/tam.png?w=250&h=250&transparent=true");
+}
+
+.buccaneers {
+    padding-top: 5px;
+    background-size: cover;
+    background-image: url("http://static.panoramio.com/photos/large/5563552.jpg");
+    cursor: pointer;
+}
+
+.nyGiantsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("http://www3.cgps.org/studentssite/grammar/subpages/NewYorkGiants_1000.png");
+}
+
+.nyGiants {
+    padding-top: 5px;
+    background-size: cover;
+    background-image: url("http://mkalty.org/wp-content/uploads/2014/02/Metlife-Stadium.jpg");
+    cursor: pointer;
+}
+///
+///Basketball
+///NBA
+.heatLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 120px;
+    background-image: url("http://www.thefloridavillager.com/wp-content/uploads/2013/06/Miami_Heat_logo.svg_.png");
+}
+
+.heat {
+    padding-top: 5px;
+    background-size: cover;
+    background-image: url("http://3.bp.blogspot.com/-82-Vq2BWFFQ/T-S91yLWaBI/AAAAAAAAGp8/lv1gSC-8OHo/s1600/P1360519.jpg");
+    cursor: pointer;
+}
+
+///
+///
+///
+
+
+.stadiumName {
+    display: inline-block;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #5E626B;
+
+}
+
+.left {
+    float: left;
     
 }
 
@@ -285,55 +520,55 @@ body {
     }
 
     .stadiumName {
-    display: block;
-    font-size: 30px;
+        display: block;
+        font-size: 30px;
     
     }
 
     .redSoxLogo {
-    margin-top: 95px;
-    height: 70px;
-    width: 70px;
+        margin-top: 95px;
+        height: 70px;
+        width: 70px;
     }
 
     .wantToGoButton {
-    float: right;
-    height: 50px;
-    line-height: 25px;
-    width: 70px;
-    border-radius: 3px;
-    margin-right: 10px;
-    margin-top: 240px;
-    background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%);     
-    text-align: center;
-    font-size: 20px;
-    font-family: Helvetica;
-    text-shadow: 0px -1px 0px black;
-    -webkit-transition: all 0.1s;
-    -moz-transition: all 0.1s;
-    -o-transition: all 0.1s;
-    transition: all 0.1s;
+        float: right;
+        height: 50px;
+        line-height: 25px;
+        width: 70px;
+        border-radius: 3px;
+        margin-right: 10px;
+        margin-top: 240px;
+        background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%);     
+        text-align: center;
+        font-size: 20px;
+        font-family: Helvetica;
+        text-shadow: 0px -1px 0px black;
+        -webkit-transition: all 0.1s;
+        -moz-transition: all 0.1s;
+        -o-transition: all 0.1s;
+        transition: all 0.1s;
 }
 
-.beenThereButton {
-    float: right;
-    margin-top: 0px;
-    margin-right: 20px;
-    height: 50px;
-    line-height: 25px;
-    margin-top: 240px;
-    width: 70px;
-    background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%);     
-    color: white;
-    text-align: center;
-    font-size: 20px;
-    font-family: Helvetica;
-    text-shadow: 0px -1px 0px black;
-    -webkit-transition: all 0.1s;
-    -moz-transition: all 0.1s;
-    -o-transition: all 0.1s;
-    transition: all 0.1s;
-    border-radius: 3px;
+    .beenThereButton {
+        float: right;
+        margin-top: 0px;
+        margin-right: 20px;
+        height: 50px;
+        line-height: 25px;
+        margin-top: 240px;
+        width: 70px;
+        background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%);     
+        color: white;
+        text-align: center;
+        font-size: 20px;
+        font-family: Helvetica;
+        text-shadow: 0px -1px 0px black;
+        -webkit-transition: all 0.1s;
+        -moz-transition: all 0.1s;
+        -o-transition: all 0.1s;
+        transition: all 0.1s;
+        border-radius: 3px;
 
 }
 }
