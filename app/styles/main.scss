@@ -26,9 +26,12 @@ a {
 .userBarIndex {
     position: fixed;
     width: calc(80% - 80px);
+    max-width: 1000px;
     display: block;
-    height: 125px;
+    height: 100px;
     background-color: gray;
+        z-index: 3;
+
 }
 
 .userBar {
@@ -40,10 +43,10 @@ a {
 
 .userAvatarIndex {
     float: right;
-    height: 50px;
-    width: 50px;
+    height: 25px;
+    width: 25px;
     margin-top:70px;
-    background-size: 50px 50px;
+    background-size: 25px 25px;
     background-image: url("http://www.ultimate-guitar.com/forum/customavatars/9/6/avatar2041469_1.gif?u=2041469&dateline=1312943518");
     margin-right: 15px;
 
@@ -71,7 +74,7 @@ a {
     float: right;
     display: inline-block;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     padding-top: 70px;
     margin-right: 15px;
 }
@@ -88,7 +91,7 @@ a {
     float: left;
     display: inline-block;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     padding-top: 70px;
     margin-left: 15px;
 }
@@ -99,7 +102,7 @@ a {
     position: fixed;
     width: 100%;
     background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%); 
-    z-index: 3;
+    z-index: 4;
 
 }
 
@@ -186,12 +189,10 @@ a {
 
 .sportHeader {
     display: block;
-    height: 40px;
     margin: 0px auto;
     background-color: black;
-    font-size: 18px;
     padding-left: 10px;
-    padding-top: 125px;
+    padding-top: 105px;
     font-size: 35px;
     font-family: Helvetica;
     color: white;
@@ -550,77 +551,157 @@ a {
     text-align: center;
 }
 
-@media screen and (max-width: 400px) {
-    .centerContainer {
-        width: 400px;
+.myStadiumsButton {
+    height: 125px;
+    padding-top: 100px;
+    line-height: 150px;
 
-    }
+}
 
-    .teamCity {
-        display: block;
-        margin-top: 3px;
-        margin-left: 5px;
-        font-size: 30px;
+.teamInfoBlock {
+    float: left;
+    display: block;
+    width: calc(50% - 30px);
+    margin: 0px auto;
+    background-color: lightgray;
+    border-bottom: 10px solid gray;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 400px;
+    max-height: 400px;
 
-    }
+}
 
-    .teamName {
-        display: block;
-        font-size: 40px;
-        margin-left: 4px;
+.stadiumImageSlider {
+    margin: 0px auto;
+    max-height: 150px;
+    height: 150px;
 
-    }
+}
 
-    .stadiumName {
-        display: block;
-        font-size: 30px;
+.stadiumAddress {
+    font-family: Helvetica;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.stadiumPhone {
+    font-family: Helvetica;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.stadiumURL {
+    font-family: Helvetica;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.teamMap {
+    float: right;
+    display: block;
+    width: 50%;
+    margin: 0px auto;
+    background-color: lightgray;
+    font-family: Helvetica;
+    color: black;
+    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+    border-bottom: 10px solid gray;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+#map-canvas {
+    margin: 0px auto;
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+}
+
+.map {
+    height: 100%;
+    width: 100%;
+    margin: 0px auto;
+
+}
+
+// @media screen and (max-width: 400px) {
+//     .centerContainer {
+//         width: 400px;
+
+//     }
+
+//     .teamCity {
+//         display: block;
+//         margin-top: 3px;
+//         margin-left: 5px;
+//         font-size: 30px;
+
+//     }
+
+//     .teamName {
+//         display: block;
+//         font-size: 40px;
+//         margin-left: 4px;
+
+//     }
+
+//     .stadiumName {
+//         display: block;
+//         font-size: 30px;
     
-    }
+//     }
 
-    .redSoxLogo {
-        margin-top: 95px;
-        height: 70px;
-        width: 70px;
-    }
+//     .redSoxLogo {
+//         margin-top: 95px;
+//         height: 70px;
+//         width: 70px;
+//     }
 
-    .wantToGoButton {
-        float: right;
-        height: 50px;
-        line-height: 25px;
-        width: 70px;
-        border-radius: 3px;
-        margin-right: 10px;
-        margin-top: 240px;
-        background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%);     
-        text-align: center;
-        font-size: 20px;
-        font-family: Helvetica;
-        text-shadow: 0px -1px 0px black;
-        -webkit-transition: all 0.1s;
-        -moz-transition: all 0.1s;
-        -o-transition: all 0.1s;
-        transition: all 0.1s;
-}
+//     .wantToGoButton {
+//         float: right;
+//         height: 50px;
+//         line-height: 25px;
+//         width: 70px;
+//         border-radius: 3px;
+//         margin-right: 10px;
+//         margin-top: 240px;
+//         background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%);     
+//         text-align: center;
+//         font-size: 20px;
+//         font-family: Helvetica;
+//         text-shadow: 0px -1px 0px black;
+//         -webkit-transition: all 0.1s;
+//         -moz-transition: all 0.1s;
+//         -o-transition: all 0.1s;
+//         transition: all 0.1s;
+// }
 
-    .beenThereButton {
-        float: right;
-        margin-top: 0px;
-        margin-right: 20px;
-        height: 50px;
-        line-height: 25px;
-        margin-top: 240px;
-        width: 70px;
-        background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%);     
-        color: white;
-        text-align: center;
-        font-size: 20px;
-        font-family: Helvetica;
-        text-shadow: 0px -1px 0px black;
-        -webkit-transition: all 0.1s;
-        -moz-transition: all 0.1s;
-        -o-transition: all 0.1s;
-        transition: all 0.1s;
-        border-radius: 3px;
+//     .beenThereButton {
+//         float: right;
+//         margin-top: 0px;
+//         margin-right: 20px;
+//         height: 50px;
+//         line-height: 25px;
+//         margin-top: 240px;
+//         width: 70px;
+//         background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%);     
+//         color: white;
+//         text-align: center;
+//         font-size: 20px;
+//         font-family: Helvetica;
+//         text-shadow: 0px -1px 0px black;
+//         -webkit-transition: all 0.1s;
+//         -moz-transition: all 0.1s;
+//         -o-transition: all 0.1s;
+//         transition: all 0.1s;
+//         border-radius: 3px;
 
-}
-}
+// }
+// }
