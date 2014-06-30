@@ -13,6 +13,36 @@ a {
 
 }
 
+.homeContainer {
+    margin-top: 100px;
+    display: inline-block;
+    float: left;
+    margin: 0px auto;
+    width: calc(80% - 80px);
+    max-width: 1000px;
+    background-color: #dedfe0;
+    box-shadow: 0px 0px 4px gray;
+    height: 100%;
+    
+}
+
+.homeLeft {
+    display: inline-block;
+    padding-top: 100px;
+    float: left;
+    height: 525px;
+    width: 525px;
+    
+}
+
+.homeLeft {
+    display: inline-block;
+    padding-top: 100px;
+    float: right;
+    height: 525px;
+    width: 525px;
+    
+}
 
 
 .userBarIndex {
