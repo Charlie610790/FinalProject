@@ -12,5 +12,3 @@ headroom.init();
 $('.userBarIndex').headroom();
 
 //////////////HEADROOM.JS////END
-
-
