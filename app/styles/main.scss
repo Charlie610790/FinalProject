@@ -664,6 +664,24 @@ a {
 
 @media screen and (max-width: 380px) {
 
+    .mapBlock {
+    display: inline-block;
+    width: 360px;
+    height: 350px;
+    padding-top: 10px;
+    padding-right: 5px;
+    margin-left: 0px;
+
+}
+
+    .stadiumMap {
+    height: 30px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-family: Helvetica;
+    margin-left: 23px;
+}
+
     .stadiumImageSlider {
         max-width: 335px;
         margin-left: 0px;
@@ -674,8 +692,8 @@ a {
     float: none;
     width: 100%;
     padding-top: 20px;
-    height: 500px;
-    max-height: 500px;
+    height: 430px;
+    max-height: 430px;
 
 
     }
