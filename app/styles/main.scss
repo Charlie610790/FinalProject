@@ -405,9 +405,10 @@ a {
     height: 100px;
     width: 100px;
     margin-top: 70px;
-    margin-left: 0px;
+    margin-left: 0px;  
     background-size: 100px 100px;
     background-image: url("http://img2.wikia.nocookie.net/__cb20111227211854/madden/images/8/82/Atlanta_Falcons_Logo.png");
+    
 }
 
 .falcons {
@@ -440,8 +441,9 @@ a {
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("http://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/tam.png?w=250&h=250&transparent=true");
+    
 }
 
 .buccaneers {
@@ -476,8 +478,9 @@ a {
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 120px;
+    background-size: cover;
     background-image: url("http://www.thefloridavillager.com/wp-content/uploads/2013/06/Miami_Heat_logo.svg_.png");
+
 }
 
 .heat {
@@ -496,6 +499,7 @@ a {
     display: inline-block;
     font-size: 40px;
     text-shadow: 2px 2px 2px #5E626B;
+    max-width: 250px;
 
 }
 
@@ -664,6 +668,19 @@ a {
 
 @media screen and (max-width: 380px) {
 
+    .packersLogo {
+    background-size: 70px 70px;
+    
+}
+    .nyGiantsLogo {    
+    background-size: 69px 70px;
+}
+
+    .falconsLogo {  
+    background-size: 70px 70px;
+    
+}
+
     .mapBlock {
     display: inline-block;
     width: 360px;
@@ -705,6 +722,13 @@ a {
 
     }
 
+    .logoMobile {
+        margin-top: 140px;
+        height: 70px;
+        width: 70px;
+
+    }
+
 
     .userBarIndex {
         width: 100%;
@@ -728,13 +752,14 @@ a {
         display: block;
         margin-top: 3px;
         margin-left: 5px;
-        font-size: 30px;
+        font-size: 20px;
+        max-width: 180px;
 
     }
 
     .teamName {
         display: block;
-        font-size: 40px;
+        font-size: 30px;
         margin-left: 4px;
 
     }
@@ -742,6 +767,7 @@ a {
     .stadiumName {
         display: inline-block;
         font-size: 20px;
+        max-width: 80px;
     
     }
 
@@ -750,7 +776,7 @@ a {
         float: right;
         height: 50px;
         line-height: 25px;
-        width: 70px;
+        width: 60px;
         border-radius: 3px;
         margin-right: 10px;
         margin-top: 140px;
@@ -767,12 +793,11 @@ a {
 
     .beenThereButton {
         float: right;
-        margin-top: 0px;
         margin-right: 20px;
         height: 50px;
         line-height: 25px;
         margin-top: 140px;
-        width: 70px;
+        width: 60px;
         background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%);     
         color: white;
         text-align: center;
@@ -802,6 +827,10 @@ a {
         height: 300px;
         width: 300px;
 
+    }
+
+    .teamsMobileButtons {
+        margin-top: 240px;
     }
 
 
