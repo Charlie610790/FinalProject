@@ -7,10 +7,10 @@ body {
     color: #333;
     margin: 0px;
 }
+
 a {
     color: white;
-    text-decoration: none;
-
+    text-decoration: none
 }
 
 .homeContainer {
@@ -22,8 +22,7 @@ a {
     max-width: 1000px;
     background-color: #dedfe0;
     box-shadow: 0px 0px 4px gray;
-    height: 100%;
-    
+    height: 100%;  
 }
 
 .homeLeft {
@@ -32,7 +31,6 @@ a {
     float: left;
     height: 525px;
     width: 525px;
-    
 }
 
 .homeLeft {
@@ -41,9 +39,7 @@ a {
     float: right;
     height: 525px;
     width: 525px;
-    
 }
-
 
 .userBarIndex {
     position: fixed;
@@ -52,8 +48,7 @@ a {
     display: block;
     height: 100px;
     background-color: gray;
-        z-index: 3;
-
+    z-index: 3;
 }
 
 .userBar {
@@ -71,7 +66,6 @@ a {
     background-size: 25px 25px;
     background-image: url("http://www.ultimate-guitar.com/forum/customavatars/9/6/avatar2041469_1.gif?u=2041469&dateline=1312943518");
     margin-right: 15px;
-
 }
 
 .userAvatar {
@@ -81,7 +75,6 @@ a {
     background-size: 50px 50px;
     background-image: url("http://www.ultimate-guitar.com/forum/customavatars/9/6/avatar2041469_1.gif?u=2041469&dateline=1312943518");
     margin-right: 15px;
-
 }
 
 .username {
@@ -125,7 +118,6 @@ a {
     width: 100%;
     background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%); 
     z-index: 4;
-
 }
 
 .logo {
@@ -137,8 +129,6 @@ a {
     font-size: 32px;
     color: white;
     text-shadow: 2px 2px 2px #5E626B;
-
-
 }
 
 .centerContainer {
@@ -162,7 +152,6 @@ a {
     color: white;
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
     border-bottom: 10px solid gray;
-
 }
 
 .sportsText {
@@ -170,7 +159,6 @@ a {
     margin-right: 15px;
     float: right;
     text-shadow: 2px 2px 2px #5E626B;
-
 }
 
 .myStadiums {
@@ -185,7 +173,6 @@ a {
     background-image: url("http://www.cookandsonbats.com/panoramas/turner/turner-101.jpg");
     cursor: pointer;
     padding-top: 5px;
-
 }
 
 .football {
@@ -194,8 +181,6 @@ a {
     cursor: pointer;    
     padding-top: 5px;
     border-bottom: none;
-
-
 }
 
 .basketball {
@@ -203,8 +188,6 @@ a {
     background-image: url("http://thesportsfather.files.wordpress.com/2012/05/img_0792.jpg");
     cursor: pointer;     
     padding-top: 5px;
-
-
 }
 
 /////////////////
@@ -221,7 +204,6 @@ a {
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
     border-bottom: 10px solid gray;
     text-align: center;
-
 }
 
 .divisionHeader {
@@ -237,7 +219,6 @@ a {
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
     border-bottom: 10px solid gray;
     text-align: center;
-
 }
 
 .sportsDivision {
@@ -253,7 +234,6 @@ a {
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
     border-bottom: 10px solid gray;
     text-align: center;
-
 }
 
 .myStadiumHome {
@@ -271,12 +251,10 @@ a {
     color: white;
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
     border-bottom: 10px solid gray;
-
 }
 
 .teamPage {
     height: 200px;
-
 }
 
 .teamCity {
@@ -311,7 +289,6 @@ a {
     background-image: url("http://www.launchphotography.com/Turner_Field_panorama.jpg");
     cursor: pointer;
     padding-top: 5px;
-
 }
 
 .redSoxLogo {
@@ -328,7 +305,6 @@ a {
     margin-top: 0px;
     height: 70px;
     width: 70px;
-
 }
 
 .redSox {
@@ -372,7 +348,6 @@ a {
     background-image: url("http://mlblogscookandsonbats.files.wordpress.com/2011/09/35-tropicana-field-panorama-section134.jpg");
     cursor: pointer;
     padding-top: 5px;
-
 }
 
 ///
@@ -408,7 +383,6 @@ a {
     margin-left: 0px;  
     background-size: 100px 100px;
     background-image: url("http://img2.wikia.nocookie.net/__cb20111227211854/madden/images/8/82/Atlanta_Falcons_Logo.png");
-    
 }
 
 .falcons {
@@ -443,7 +417,6 @@ a {
     margin-left: 0px;
     background-size: cover;
     background-image: url("http://a.espncdn.com/combiner/i?img=/i/teamlogos/nfl/500/tam.png?w=250&h=250&transparent=true");
-    
 }
 
 .buccaneers {
@@ -480,7 +453,6 @@ a {
     margin-left: 0px;
     background-size: cover;
     background-image: url("http://www.thefloridavillager.com/wp-content/uploads/2013/06/Miami_Heat_logo.svg_.png");
-
 }
 
 .heat {
@@ -500,12 +472,10 @@ a {
     font-size: 40px;
     text-shadow: 2px 2px 2px #5E626B;
     max-width: 250px;
-
 }
 
 .left {
     float: left;
-    
 }
 
 .right {
@@ -552,12 +522,10 @@ a {
     -o-transition: all 0.1s;
     transition: all 0.1s;
     border-radius: 3px;
-
 }
 
 .teamPageButton {
     margin-top: 150px;
-
 }
 
 
@@ -581,7 +549,6 @@ a {
     height: 125px;
     padding-top: 100px;
     line-height: 150px;
-
 }
 
 .teamInfoBlock {
@@ -590,7 +557,6 @@ a {
     height: 500px;
     padding-top: 10px;
     padding-left: 10px;
-
 }
 
 .mapBlock {
@@ -599,48 +565,41 @@ a {
     height: 500px;
     padding-top: 10px;
     padding-right: 5px;
-
 }
 
 .stadiumImageSlider {
     margin: 0px auto;
     max-height: 150px;
     height: 150px;
-
 }
 
 .stadiumAddress {
     font-family: Helvetica;
     font-size: 20px;
     margin-bottom: 20px;
-
 }
 
 .stadiumPhone {
     font-family: Helvetica;
     font-size: 20px;
     margin-bottom: 20px;
-
 }
 
 .stadiumURL {
     font-family: Helvetica;
     font-size: 20px;
     margin-bottom: 20px;
-
 }
 
 .middleContainer {
     display: block;
     border-bottom: 10px solid gray;
-
 }
 
 #map-canvas {
     margin: 0px auto;
     height: 70%;
     width: 95%;
-   
 }
 
 .footer {
@@ -648,14 +607,12 @@ a {
     height: 65px;
     width: 100%;
     background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%); 
-
 }
 
 .footerText {
     text-align: center;
     padding-top: 20px;
     color: white;
-
 }
 
 .stadiumMap {
@@ -669,87 +626,78 @@ a {
 @media screen and (max-width: 380px) {
 
     .driveLogo {
-    background-size: 70px 70px;
-}
+        background-size: 70px 70px;
+    }
 
     .packersLogo {
-    background-size: 70px 70px;
-    
-}
+        background-size: 70px 70px;
+
+    }
+
     .nyGiantsLogo {    
-    background-size: 69px 70px;
-}
+        background-size: 69px 70px;
+    }
 
     .falconsLogo {  
-    background-size: 70px 70px;
-    
-}
+        background-size: 70px 70px;
+    }
 
     .mapBlock {
-    display: inline-block;
-    width: 360px;
-    height: 350px;
-    padding-top: 10px;
-    padding-right: 5px;
-    margin-left: 0px;
-
-}
+        display: inline-block;
+        width: 360px;
+        height: 350px;
+        padding-top: 10px;
+        padding-right: 5px;
+        margin-left: 0px;
+    }
 
     .stadiumMap {
-    height: 30px;
-    margin-bottom: 0px;
-    font-size: 20px;
-    font-family: Helvetica;
-    margin-left: 23px;
-}
+        height: 30px;
+        margin-bottom: 0px;
+        font-size: 20px;
+        font-family: Helvetica;
+        margin-left: 23px;
+    }
 
     .stadiumImageSlider {
         max-width: 335px;
         margin-left: 0px;
-
     }
 
     .teamInfoBlock {
-    float: none;
-    width: 100%;
-    padding-top: 20px;
-    height: 430px;
-    max-height: 430px;
-
-
+        float: none;
+        width: 100%;
+        padding-top: 20px;
+        height: 430px;
+        max-height: 430px;
     }
 
     .logoTeamPage {
         margin-top: 50px;
         height: 50px;
         width: 50px;
-
     }
 
     .logoMobile {
         margin-top: 140px;
         height: 70px;
         width: 70px;
-
     }
 
 
     .userBarIndex {
         width: 100%;
-
     }
 
     .sportsText {
-    margin-top: 250px;
-    margin-right: 10px;
-    float: right;
-    text-shadow: 2px 2px 2px #5E626B;
-
+        margin-top: 250px;
+        margin-right: 10px;
+        float: right;
+        text-shadow: 2px 2px 2px #5E626B;
     }
 
     .centerContainer {
         width: 365px;
-
     }
 
     .teamCity {
@@ -758,7 +706,6 @@ a {
         margin-left: 5px;
         font-size: 20px;
         max-width: 180px;
-
     }
 
     .teamName {
@@ -766,16 +713,13 @@ a {
         font-size: 30px;
         margin-left: 4px;
         margin-bottom: 20px;
-
     }
 
     .stadiumName {
         display: inline-block;
         font-size: 20px;
         max-width: 120px;
-    
     }
-
 
     .wantToGoButton {
         float: right;
@@ -794,7 +738,7 @@ a {
         -moz-transition: all 0.1s;
         -o-transition: all 0.1s;
         transition: all 0.1s;
-}
+    }
 
     .beenThereButton {
         float: right;
@@ -814,7 +758,6 @@ a {
         -o-transition: all 0.1s;
         transition: all 0.1s;
         border-radius: 3px;
-
     }
 
     .teamMap {        
@@ -824,19 +767,15 @@ a {
         padding-top: 0px;
         padding-bottom: 0px;
         border-bottom: none;
-    
     }
 
     #map-canvas {
         margin: 0px auto;
         height: 300px;
         width: 300px;
-
     }
 
     .teamsMobileButtons {
         margin-top: 240px;
     }
-
-
 }
