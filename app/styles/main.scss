@@ -668,6 +668,10 @@ a {
 
 @media screen and (max-width: 380px) {
 
+    .driveLogo {
+    background-size: 70px 70px;
+}
+
     .packersLogo {
     background-size: 70px 70px;
     
@@ -761,13 +765,14 @@ a {
         display: block;
         font-size: 30px;
         margin-left: 4px;
+        margin-bottom: 20px;
 
     }
 
     .stadiumName {
         display: inline-block;
         font-size: 20px;
-        max-width: 80px;
+        max-width: 120px;
     
     }
 
