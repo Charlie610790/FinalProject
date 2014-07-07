@@ -63,7 +63,7 @@ $('.loginButton').click(function() {
 
 $('.logoutButton').click(function() {
 	Parse.User.logOut();
-	window.location.replace("index.html");
+	window.location.replace("http://localhost:9000/index.html");
 	console.log('You Logged Out');
 });
 
