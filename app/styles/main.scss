@@ -13,6 +13,61 @@ a {
     text-decoration: none
 }
 
+input {
+    display: inline-block;
+    border: 5px solid white; 
+    -webkit-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    -moz-box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    box-shadow: 
+      inset 0 0 8px  rgba(0,0,0,0.1),
+            0 0 16px rgba(0,0,0,0.1); 
+    padding: 5px;
+    background: rgba(255,255,255,0.5);
+    margin-left: 10px;
+    margin-top: 5px;
+    width: 150px;
+}
+
+.signupButton {
+    margin-top: 10px;
+    margin-right: 20px;  
+    display: inline-block;
+    float: right;
+    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    width: 100px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    color: white;
+    font-family: helvetica;
+    cursor: pointer;
+    text-shadow: 0px -1px 0px black;
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    -o-transition: all 0.1s;
+    transition: all 0.1s;
+
+    &:hover {
+        -webkit-filter: brightness(120%); 
+        -moz-filter: brightness(120%);
+        -o-filter: brightness(120%);
+        filter: brightness(120%);
+    }
+
+    &:active {
+        -webkit-filter: brightness(80%); 
+        -moz-filter: brightness(80%);
+        -o-filter: brightness(80%);
+        filter: brightness(80%);
+    }
+}
+
 .homeContainer {
     margin-top: 100px;
     display: inline-block;

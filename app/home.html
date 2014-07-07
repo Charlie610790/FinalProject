@@ -13,6 +13,7 @@
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/headroom.css">
 
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
@@ -30,21 +31,36 @@
             <div class="header">
                 <div class="logo">NAME</div>
             </div>
-            <div class="homeContainer">
-                <div class="homeLeft">left</div>
-                <div class="homeRight">right</div>
+            <div class="centerContainer">
+                <div class="userBarIndex">
+                    <div class="backIndex">
+                        <a href="javascript:history.back()">Back</a>
+                    </div>
+                    <div class="usernameIndex">Charlie610790</div>
+                    <div class="userAvatarIndex"></div>
+                </div>
+                <a href="mystadiums.html"><div class="sportButton myStadiums myStadiumHome">
+                    <div class="sportsText">My Stadiums</div> 
+                </div></a>
+                <a href="baseball.html"><div class="sportButton baseball">
+                    <div class="sportsText">Baseball</div>
+                </div></a>
+                <a href="basketball.html"><div class="sportButton basketball">
+                    <div class="sportsText">Basketball</div>
+                </div></a>
+                <a href="football.html"><div class="sportButton football">
+                    <div class="sportsText">Football</div>
+                </div></a>
+            </div>
+            <div class="footer">
+                <div class="footerText">&#169; 2014 Charles M. Jones</div>
             </div>
         </div>
-
-
-
-
-
-
-        
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -59,6 +75,8 @@
         </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
+        <script src="scripts/headroom.js"></script>
+        <script src="scripts/jQuery.headroom.js"></script>
         <script src="scripts/main.js"></script>
 
         <!-- endbuild -->
