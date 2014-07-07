@@ -9,13 +9,13 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css styles/vendor.css -->
         <!-- bower:css -->
-
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="../../../styles/headroom.css">
         <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="../../../styles/login.css">
+        <link rel="stylesheet" href="styles/headroom.css">
+        <link rel="stylesheet" href="styles/login.css">
+
 
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
@@ -41,24 +41,23 @@
                     <div class="usernameIndex">Charlie610790</div>
                     <div class="userAvatarIndex"></div>
                 </div>
-                <div class="sportHeader login">Login</div>
-                <div class="loginContainer">
-                    <div class="loginText">Login</div>
-                    <div class="loginInputs">Username:<input class="loginInputField" type="text" maxlength="550" name="imageURL" placeholder="Enter Your Username Here" id="imageURL" /></div>
-                    <div class="loginInputs">Password: <input class="loginInputField" type="text" maxlength="550" name="imageComment" placeholder="Enter Your Password Here" id="imageComment" /></div>
-                    <div class="loginButton">Login</div>
-                    <div class="loginFooter"> <a href="signup.html">Don't have a username?</a> / <a href="forgotPassword.html">Forgot Password?</a></div>
-                </div>    
+                
+                
+                <div class="signupHeader">LOGIN</div>
+                <input class="input" type="text" maxlength="280" name="userName" placeholder="Enter Your Username Here" id="userName" />
+                <input class="input" type="text" maxlength="280" name="password" placeholder="Enter Your Password Here" id="password" />
+                <div class="loginButton">Login</div>
+
             </div>
             <div class="footer">
                 <div class="footerText">&#169; 2014 Charles M. Jones</div>
             </div>
         </div>
-
-
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
+
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -76,6 +75,7 @@
         <script src="scripts/headroom.js"></script>
         <script src="scripts/jQuery.headroom.js"></script>
         <script src="scripts/main.js"></script>
+
         <!-- endbuild -->
 </body>
 </html>

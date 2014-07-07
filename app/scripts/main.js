@@ -24,7 +24,7 @@ var UserCollection = Parse.Collection.extend({
 });
 
 var collection = new UserCollection();
-
+///////////////
 $('.signupButton').click(function() {
 	var user = new Parse.User();
 
@@ -49,5 +49,23 @@ $('.signupButton').click(function() {
 	});
 
 	console.log('It Worked!');
+
+});
+
+///////////////
+
+$('.loginButton').click(function() {
+	var username = 	$('#userName').val();
+	var password = 	$('#password').val();
+	Parse.User.logIn(username, password, {
+  	success: function(user) {
+    // Do stuff after successful login.
+  	},
+  	error: function(user, error) {
+    // The login failed. Check error to see why.
+  	}
+});
+
+	console.log('You Logged In');
 
 });

@@ -1,3 +1,6 @@
+// bower:scss
+// endbower
+
 input {
     display: block;
     height: 20px;
@@ -18,7 +21,7 @@ input {
     width: 150px;
 }
 
-.loginButton {
+.signupButton {
     margin: 0px auto;
     
     background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
