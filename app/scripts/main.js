@@ -24,7 +24,9 @@ var UserCollection = Parse.Collection.extend({
 });
 
 var collection = new UserCollection();
-///////////////
+
+///////////////Signup Button
+
 $('.signupButton').click(function() {
 	var user = new Parse.User();
 
@@ -52,7 +54,7 @@ $('.signupButton').click(function() {
 
 });
 
-///////////////
+///////////////Login Button
 
 $('.loginButton').click(function() {
 	var username = 	$('#userName').val();
@@ -69,3 +71,5 @@ $('.loginButton').click(function() {
 	console.log('You Logged In');
 
 });
+
+///////////////
