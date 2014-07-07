@@ -2,19 +2,6 @@
 
 Parse.initialize('EqWIGNej8qO65jxtkm5clG2mPEdVhCvj0EvlF5El', '6SYAg7C95UgX6fLaY5vjDJnxyAFXn58q7ezl0u13');
 
-//////////////HEADROOM.JS////BEGIN
-
-// grab an element
-var myElement = document.querySelector('.userBarIndex');
-// construct an instance of Headroom, passing the element
-var headroom  = new Headroom(myElement);
-// initialise
-headroom.init();
-
-$('.userBarIndex').headroom();
-
-//////////////HEADROOM.JS////END
-
 var User = Parse.Object.extend ({
 	className: 'User'
 });
@@ -66,8 +53,8 @@ $('.loginButton').click(function() {
   	error: function(user, error) {
     // The login failed. Check error to see why.
   	}
-});
 
+});
 	console.log('You Logged In');
 
 });
@@ -76,6 +63,7 @@ $('.loginButton').click(function() {
 
 $('.logoutButton').click(function() {
 	Parse.User.logOut();
+	window.location.replace("index.html");
 	console.log('You Logged Out');
 });
 
