@@ -11,6 +11,16 @@ body {
 a {
     color: white;
     text-decoration: none
+
+}
+
+.logoutButton {
+    display: block;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    margin: 0px auto;
+
 }
 
 .landingHeader {
@@ -659,6 +669,7 @@ a {
 }
 
 .footerText {
+    display: block;
     text-align: center;
     padding-top: 20px;
     color: white;

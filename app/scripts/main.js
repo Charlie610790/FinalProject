@@ -72,4 +72,13 @@ $('.loginButton').click(function() {
 
 });
 
-///////////////
+///////////////Logout Button
+
+$('.logoutButton').click(function() {
+	Parse.User.logOut();
+	console.log('You Logged Out');
+});
+
+	
+
+
