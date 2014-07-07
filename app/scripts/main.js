@@ -1,6 +1,6 @@
 'use strict';
 
-Parse.initialize('Y0CLQUqpAgyNIY0aA2qx1nW6GWyqM1cUcdKGo2BR', 'RZCmPbmSapjeCMfWQNUqmiTfInXos8vxS8xkUBPa');
+Parse.initialize('EqWIGNej8qO65jxtkm5clG2mPEdVhCvj0EvlF5El', '6SYAg7C95UgX6fLaY5vjDJnxyAFXn58q7ezl0u13');
 
 //////////////HEADROOM.JS////BEGIN
 
@@ -14,6 +14,40 @@ headroom.init();
 $('.userBarIndex').headroom();
 
 //////////////HEADROOM.JS////END
+
+var User = Parse.Object.extend ({
+	className: 'User'
+});
+
+var UserCollection = Parse.Collection.extend({
+    model: User
+});
+
+var collection = new UserCollection();
+
+// $('.signupButton').click(function() {
+//     //takse the input value of the comment field and assigns it to the var comment
+//     var comment = $('#imageComment').val();
+//     //takse the input value of the url field and assigns it to the var url
+//     var url = $('#imageURL').val();
+//     //creates a new instance of the constructor POST passing the two assigned variables
+//     var outgoingPost = new Post();
+//     //sets the two assigned variables
+//     outgoingPost.set({
+//         'URL'     :   url,
+//         'Comment' :   comment
+//     });
+
+//     outgoingPost.save().done(function () {
+//         console.log('It Worked!');
+//         console.log('url is', url);
+//         console.log('comment is', comment);
+//         //takes the value of the comment and image fields and clears it
+//         $('#imageComment').val('');
+//         $('#imageURL').val('');
+//     });
+
+// });
 
 var user = new Parse.User();
 user.set("username", "my name");
