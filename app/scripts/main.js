@@ -67,6 +67,16 @@ $('.logoutButton').click(function() {
 	console.log('You Logged Out');
 });
 
+///////////////Logout Button
+$('.bravesWTG').click(function() {
+	var user = Parse.User.current();
+	user.set({
+	'bucketlist' :  'Braves'
+	});
+	user.save();
+
+	console.log('You Added A Team To Your Bucketlist');
+});
 	
 
 
