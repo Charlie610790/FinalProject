@@ -20,3 +20,8 @@ $('.redsoxBT').click(function() {
 	console.log('You Added A Team To Your Been There List');
 });
 	
+
+///what I want to Add
+///{teamname: Braves, teamcity: Atlanta, teamlogo: 'images/logo.png', teampic: 'images/teampic.jpg',
+
+//}

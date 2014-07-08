@@ -27,4 +27,4 @@ var ToolBarView = Parse.View.extend({
  
 });
 
-new ToolBarView();
+new ToolBarView({model: Parse.User.current()});
