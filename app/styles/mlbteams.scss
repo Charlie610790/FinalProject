@@ -1,0 +1,516 @@
+// bower:scss
+// endbower
+
+///Baseball
+///MLB
+
+.diamondbacksLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/diamondbackslogo.png");
+}
+
+.diamondbacks {
+    background-size: cover;
+    background-image: url("../images/Stadiums/ChaseField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.bravesLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/braveslogo.png");
+}
+
+.braves {
+    background-size: cover;
+    background-image: url("../images/Stadiums/TurnerField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.oriolesLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/orioleslogo.png");
+}
+
+.orioles {
+    background-size: cover;
+    background-image: url("../images/Stadiums/ChaseField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.redSoxLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/redsoxlogo.png");
+}
+
+.redSox {
+    padding-top: 5px;
+    background-size: cover;
+    background-image: url("../images/Stadiums/FenwayPark.jpg");
+    cursor: pointer;
+}
+
+.cubsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/cubslogo.png");
+}
+
+.cubs {
+    background-size: cover;
+    background-image: url("../images/Stadiums/WrigleyField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.whitesoxLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/whitesoxlogo.png");
+}
+
+.whitesox {
+    background-size: cover;
+    background-image: url("../images/Stadiums/USCellularField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.redsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/redslogo.png");
+}
+
+.reds {
+    background-size: cover;
+    background-image: url("../images/Stadiums/GreatAmericanBallPark.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.indiansLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/indianslogo.png");
+}
+
+.indians {
+    background-size: cover;
+    background-image: url("../images/Stadiums/ProgressiveField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.rockiesLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/rockieslogo.png");
+}
+
+.rockies {
+    background-size: cover;
+    background-image: url("../images/Stadiums/CoorsField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.tigersLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/tigerslogo.png");
+}
+
+.tigers {
+    background-size: cover;
+    background-image: url("../images/Stadiums/ComericaPark.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.astrosLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/astroslogo.png");
+}
+
+.astros {
+    background-size: cover;
+    background-image: url("../images/Stadiums/MinuteMaidPark.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.royalsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/royalslogo.png");
+}
+
+.royals {
+    background-size: cover;
+    background-image: url("../images/Stadiums/KauffmanStadium.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.angelsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/angelslogo.png");
+}
+
+.angels {
+    background-size: cover;
+    background-image: url("../images/Stadiums/AngelStadium.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.dodgersLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/dodgerslogo.png");
+}
+
+.dodgers {
+    background-size: cover;
+    background-image: url("../images/Stadiums/DodgerStadium.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.marlinsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/marlinslogo.png");
+}
+
+.marlins {
+    background-size: cover;
+    background-image: url("../images/Stadiums/MarlinsPark.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.brewersLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/brewerslogo.png");
+}
+
+.brewers {
+    background-size: cover;
+    background-image: url("../images/Stadiums/MillerPark.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.twinsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/twinslogo.png");
+}
+
+.twins {
+    background-size: cover;
+    background-image: url("../images/Stadiums/TargetField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.metsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/metslogo.png");
+}
+
+.mets {
+    background-size: cover;
+    background-image: url("../images/Stadiums/CitiField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.yankeesLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/yankeeslogo.png");
+}
+
+.yankees {
+    background-size: cover;
+    background-image: url("../images/Stadiums/YankeeStadium.jpg");
+    cursor: pointer;    
+    padding-top: 5px;
+
+}
+
+.athleticsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/athleticslogo.png");
+}
+
+.athletics {
+    background-size: cover;
+    background-image: url("../images/Stadiums/OcoColiseum.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.philliesLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/phillieslogo.png");
+}
+
+.phillies {
+    background-size: cover;
+    background-image: url("../images/Stadiums/CitizensBankPark.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.piratesLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/pirateslogo.png");
+}
+
+.pirates {
+    background-size: cover;
+    background-image: url("../images/Stadiums/PNCPark.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.padresLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/padreslogo.png");
+}
+
+.padres {
+    background-size: cover;
+    background-image: url("../images/Stadiums/PetcoPark.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.marinersLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/marinerslogo.png");
+}
+
+.mariners {
+    background-size: cover;
+    background-image: url("../images/Stadiums/SafecoField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.giantsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/sfgiantslogo.png");
+}
+
+.giants {
+    background-size: cover;
+    background-image: url("../images/Stadiums/AT&TPark.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.cardinalsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/cardinalslogo.png");
+}
+
+.cardinals {
+    background-size: cover;
+    background-image: url("../images/Stadiums/BuschStadium.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.raysLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/rayslogo.png");
+}
+
+.rays {
+    background-size: cover;
+    background-image: url("../images/Stadiums/TropicanaField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.rangersLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/rangerslogo.png");
+}
+
+.rangers {
+    background-size: cover;
+    background-image: url("../images/Stadiums/GlobeLifeParkinArlington.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.bluejaysLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/bluejayslogo.png");
+}
+
+.bluejays {
+    background-size: cover;
+    background-image: url("../images/Stadiums/RogersCentre.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+.nationalsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/nationalslogo.png");
+}
+
+.nationals {
+    background-size: cover;
+    background-image: url("../images/Stadiums/NationalsPark.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
