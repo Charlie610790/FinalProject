@@ -1,0 +1,33 @@
+// bower:scss
+// endbower
+
+///Baseball
+///MLB
+
+.diamondbacksLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: cover;
+    background-image: url("../images/logos/diamondbackslogo.png");
+}
+
+.diamondbacks {
+    background-size: cover;
+    background-image: url("../images/Stadiums/ChaseField.jpg");
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+
+
+@media screen and (max-width: 380px) {
+    .logoMobile {
+        margin-top: 140px;
+        height: 70px;
+        width: 70px;
+    }
+
+}
