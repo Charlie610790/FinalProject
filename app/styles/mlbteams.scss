@@ -163,7 +163,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/tigerslogo.png");
 }
 
@@ -197,7 +197,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/royalslogo.png");
 }
 
@@ -248,7 +248,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/marlinslogo.png");
 }
 
@@ -265,7 +265,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/brewerslogo.png");
 }
 
@@ -282,7 +282,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/twinslogo.png");
 }
 
@@ -299,7 +299,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/metslogo.png");
 }
 
@@ -316,7 +316,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: cover;
+    background-size: 100px 100px;
     background-image: url("../images/logos/yankeeslogo.png");
 }
 
@@ -334,7 +334,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/athleticslogo.png");
 }
 
@@ -385,7 +385,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/padreslogo.png");
 }
 
@@ -402,7 +402,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/marinerslogo.png");
 }
 
@@ -419,7 +419,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/sfgiantslogo.png");
 }
 
@@ -436,7 +436,7 @@
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
-    background-size: 100px 100px;
+    background-size: cover;
     background-image: url("../images/logos/cardinalslogo.png");
 }
 
@@ -513,4 +513,52 @@
     background-image: url("../images/Stadiums/NationalsPark.jpg");
     cursor: pointer;
     padding-top: 5px;
+}
+
+@media screen and (max-width: 380px) {
+    .logoMobile {
+        margin-top: 140px;
+        height: 70px;
+        width: 70px;
+    }
+
+    .whitesoxLogo {
+        background-size: 70px 70px;
+    }
+
+    .rockiesLogo {
+        background-size: 70px 70px;
+    }
+
+    .tigersLogo {
+        background-size: 70px 70px;
+    }
+
+    .astrosLogo {
+        background-size: 70px 70px;
+    }
+
+    .royalsLogo {
+        background-size: 70px 70px;
+    }
+
+    .angelsLogo {
+        background-size: 70px 70px;
+    }
+
+    .dodgersLogo {
+        background-size: 70px 70px;
+    }
+
+    .yankeesLogo {
+        background-size: 70px 70px;
+}
+
+    .philliesLogo {
+        background-size: 70px 70px;
+    }
+
+    .piratesLogo {
+        background-size: 70px 70px;
+    }
 }
