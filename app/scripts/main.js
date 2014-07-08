@@ -29,7 +29,7 @@ $('.signupButton').click(function() {
 
 	user.signUp(null, {
   	success: function(user) {
-    // Hooray! Let them use the app now.
+	window.location.replace("http://localhost:9000/home.html");
   	},
   	error: function(user, error) {
     // Show the error message somewhere and let the user try again.
@@ -48,8 +48,7 @@ $('.loginButton').click(function() {
 	var password = 	$('#password').val();
 	Parse.User.logIn(username, password, {
   	success: function(user) {
-    // Do stuff after successful login.
-  	},
+	window.location.replace("http://localhost:9000/home.html")  	},
   	error: function(user, error) {
     // The login failed. Check error to see why.
   	}
