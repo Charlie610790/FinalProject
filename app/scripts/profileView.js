@@ -11,6 +11,7 @@ var ProfileView = Parse.View.extend({
 
     events: {
         'click .saveProfile'              : 'saveProfile',
+        'click .changePassword'           : 'changePassword',
     },
  
  
@@ -41,6 +42,24 @@ var ProfileView = Parse.View.extend({
             console.log('You Saved It!!!')
                 window.location.replace("http://localhost:9000/profile.html");
 
+        });
+    },
+
+    changePassword: function(){
+
+        var user = Parse.User.current();
+
+        var email    =  $('#email-input').val();
+
+        Parse.User.requestPasswordReset(email, {
+            success: function() {
+                // Password reset request was sent successfully
+                alert("Password reset request was sent successfully.");
+            },
+            error: function(error) {
+                // Show the error message somewhere
+                alert("Error: " + error.code + " " + error.message);
+            }
         });
     },
  

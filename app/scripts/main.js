@@ -66,6 +66,23 @@ $('.logoutButton').click(function() {
 	console.log('You Logged Out');
 });
 
+///////////////
+
+$('.diamonbacksWTG').click(function() {
+
+	var stadium = objectId:@"OuRc4iLiJR";
+
+	var user = Parse.User.current();
+	var relation = user.relation("Stadium");
+	relation.add(stadium);
+	user.save();
+	
+	console.log('You Added It');
+});
+
+
+
+
 
 
 
