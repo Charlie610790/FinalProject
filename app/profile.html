@@ -13,8 +13,8 @@
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/headroom.css">
+        <link rel="stylesheet" href="../../../styles/main.css">
+        <link rel="stylesheet" href="../../../styles/headroom.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
@@ -32,10 +32,12 @@
                 <div class="logo">NAME</div>
             </div>
             <div class="centerContainer">
-                <div class="userBarIndex"></div>   
-                <div class="sportHeader">Basketball</div>
-                <a href="nbaTeams.html"><div class="sportsDivision">NBA</div></a>
-            </div>
+                <div class="userBarIndex"></div>
+                <div class="profileContainer">
+                    <div class="profileHeader">Profile</div>
+                    <div class="profileBody"></div>
+                </div>
+            </div>   
             <div class="footer">
                 <div class="footerText">&#169; 2014 Charles M. Jones</div>
                 <div class="logoutButton">Logout</div>
@@ -49,6 +51,18 @@
             <div class="usernameIndex"><a href="profile.html"><%= username %></a></div>
             <div class="userAvatarIndex"><a href="profile.html"><img src="<%= Avatar %>" width="25px" height="25px"></a></div>
         </script>
+
+        <script type="text/template" class="profileTemplate">
+            <div class="editProfile"><a href="editProfile.html">Edit Profile</a></div>       
+            <div class="profileAvatar"><img src="<%= Avatar %>" width="200px" height="200px"></div>        
+            <div class="profileUsername">Username: <%= username %></div>
+            <div class="profileEmail">Email: <%= email %></div>
+            <div class="profileMyStadiums">Been To</div>
+            <div class="profileBeenTo"></div>
+            <div class="profileMyStadiums">Want To Go</div>
+            <div class="profileWantToGo"></div>
+        </script>
+
 
 
         <!-- build:js scripts/vendor.js -->
@@ -74,7 +88,8 @@
         <script src="scripts/jQuery.headroom.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/toolbarView.js"></script>
-        <script src="scripts/userBar.js"></script>
-                <!-- endbuild -->
+        <script src="scripts/userBar.js"></script>   
+        <script src="scripts/profileView.js"></script>
+             <!-- endbuild -->
 </body>
 </html>
