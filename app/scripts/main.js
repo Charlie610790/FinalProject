@@ -66,44 +66,13 @@ $('.logoutButton').click(function() {
 	console.log('You Logged Out');
 });
 
-///////////////Want To Go Relation
-
-var Stadium = Parse.Object.extend ({
-	className: 'Stadium'
-});
-
-var StadiumCollection = Parse.Collection.extend({
-    model: Stadium
-});
-
-var collection = new StadiumCollection();
-
-// $('.diamonbacksWTG').click(function() {
-
-// 	var stadium = Stadium[0];
-
-// 	var user = Parse.User.current();
-// 	var relation = user.relation("WTGstadiums");
-// 	relation.add(Stadium);
-// 	user.save();
-	
-// 	console.log('You Added It');
-// });
-
-//////////////// Been There Relation
-
-// var collection = new StadiumCollection();
-///////////////////////////
-///////////////////////////
-///////////////////////////
-///////////////////////////
+///////////////Been There Relation
 $('.diamonbacksBT').click(function() {
 
 	var Stadium = Parse.Object.extend("Stadium");
 	var query = new Parse.Query(Stadium);
 	query.get("OuRc4iLiJR", {
 	  success: function(stadium) {
-		// var Arizona = stadium	    // The object was retrieved successfully.
 		var user = Parse.User.current();
 		var relation = user.relation("BTstadiums");
 			console.log(stadium);
@@ -112,44 +81,20 @@ $('.diamonbacksBT').click(function() {
 		user.save();
 	  },
 	  error: function(object, error) {
-	    // The object was not retrieved successfully.
-	    // error is a Parse.Error with an error code and description.
 	  }
-
-	  	
-
-	});
-
-	
-	
+	});	
 	console.log('You Added It');
 });
-///////////////////////////
-///////////////////////////
-///////////////////////////
-///////////////////////////
-// $('.diamonbacksBT').click(function() {
+
+
+
+////////////////////
+// $('.diamonbacksWTG').click(function() {
+
 // 	var user = Parse.User.current();
-// 	user.put("parent", Stadium.createWithoutData("Stadium", "OuRc4iLiJR"));
-
-
-// 	console.log('You Added It');
-
-
-// });
-///////////////////////////
-//////////////////////////
-///////////////////////////
-//////////////////////////
-// $('.diamonbacksBT').click(function() {
-
-// 	ParseUser user = ParseUser.getCurrentUser();
-// 	ParseRelation<ParseObject> relation = user.getRelation("BTstadiums");
-// 	relation.add(post);
-// 	user.saveInBackground();
-
-
-	
+// 	var relation = user.relation("WTGStadiums");
+// 	relation.add(Stadium);
+// 	user.save();
 	
 // 	console.log('You Added It');
 // });
