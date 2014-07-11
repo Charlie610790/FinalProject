@@ -41,7 +41,7 @@ navigator.geolocation.getCurrentPosition(success, error, options);
 ////////////
 
 
-$('.nearMe').click(function() {
+$('.MLBnearMe').click(function() {
 	var user = Parse.User.current();
 	var Stadium = Parse.Object.extend("Stadium");
 	var userGeoPoint = user.get("GeoLocation");
@@ -52,13 +52,45 @@ $('.nearMe').click(function() {
 // Final list of objects
 	query.find({
   	success: function(results) {
-  		alert("Successfully retrieved " + results.length + " stadiums.");
   		for (var i = 0; i < results.length; i++) { 
-      var object = results[i];
-      console.log(object.id + ' - ' + object.get('StadiumName'));
-    }
+      	var object = results[i];
+
+
+
+      	console.log(object.get('StadiumName'));
+
+    	}
+    	alert("Successfully retrieved " + results.length + " stadiums.");
+
   	}
 });
+	console.log('You Ran It');
+
+});
+
+/////////////
+
+$('.AnearMe').click(function() {
+	var user = Parse.User.current();
+	var Stadium = Parse.Object.extend("ABaseballStadiums");
+	var userGeoPoint = user.get("GeoLocation");
+	var query = new Parse.Query(Stadium);
+	query.near("GeoLocation", userGeoPoint);
+	// Limit what could be a lot of points.
+	query.limit(3);
+	// Final list of objects
+	query.find({
+  	success: function(results) {
+  		for (var i = 0; i < results.length; i++) { 
+      	var object = results[i];
+
+      	console.log(object.get('StadiumName'));
+
+    	}
+    	alert("Successfully retrieved " + results.length + " stadiums.");
+
+  	}
+	});
 	console.log('You Ran It');
 
 });

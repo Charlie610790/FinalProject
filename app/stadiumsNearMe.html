@@ -34,8 +34,8 @@
             <div class="centerContainer">
                 <div class="userBarIndex"></div>
                 <div class="profileContainer">
-                    <div class="profileHeader">Profile</div>
-                    <div class="profileBody"></div>
+                    <div class="profileHeader">Stadiums Near Me</div>
+                    <div class="stadiumsnearmeBody"></div>
                 </div>
             </div>   
             <div class="footer">
@@ -52,16 +52,12 @@
             <div class="userAvatarIndex"><a href="profile.html"><img src="<%= Avatar %>" width="25px" height="25px"></a></div>
         </script>
 
-        <script type="text/template" class="profileTemplate">
+        <script type="text/template" class="stadiumsnearmeTemplate">
             <div class="editProfile"><a href="editProfile.html">Edit Profile</a></div>       
-            <div class="profileAvatar"><img src="<%= Avatar %>" width="200px" height="200px"></div>        
-            <div class="profileUsername">Username: <%= username %></div>
-            <div class="profileEmail">Email: <%= email %></div>
-            <div class="stadiumsNearMe"><a href="stadiumsNearMe.html">Stadiums Near Me</a></div>
-            <div class="profileMyStadiums">Been To</div>
-            <div class="profileBeenTo"></div>
-            <div class="profileMyStadiums">Want To Go</div>
-            <div class="profileWantToGo"></div>
+                    
+            <div class="mlbStadiumsNearMe">MLB Stadiums</div>
+            <div class="AStadiumsNearMe">A Stadiums</div>
+           
         </script>
 
 
@@ -91,7 +87,7 @@
         <script src="scripts/toolbarView.js"></script>
         <script src="scripts/userBar.js"></script>
         <script src="scripts/geo.js"></script>   
-        <script src="scripts/profileView.js"></script>
+        <script src="scripts/stadiumsNearMe.js"></script>
              <!-- endbuild -->
 </body>
 </html>
