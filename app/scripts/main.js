@@ -24,7 +24,8 @@ $('.signupButton').click(function() {
 	user.set({
 	'username' :  username,
 	'password' :  password,
-	'email'    :  email
+	'email'    :  email,
+	'Avatar'   :  "../images/avatarPlaceholder.jpg"
 	});
 
 	user.signUp(null, {

@@ -17,6 +17,7 @@ var MyStadiumsBTView = Parse.View.extend({
     initialize: function(){
         $('.myStadiumsBTContainer').append(this.el);
         var query = new Parse.Query(User);
+        console.log(Parse.User.current());
         query.equalTo("BTstadiums", "StadiumName");
         console.log(this);
         query.find({
