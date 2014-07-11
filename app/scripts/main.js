@@ -65,36 +65,3 @@ $('.logoutButton').click(function() {
 	window.location.replace("http://localhost:9000/index.html");
 	console.log('You Logged Out');
 });
-
-///////////////Been There Relation
-$('.diamonbacksBT').click(function() {
-
-	var Stadium = Parse.Object.extend("Stadium");
-	var query = new Parse.Query(Stadium);
-	query.get("OuRc4iLiJR", {
-	  success: function(stadium) {
-		var user = Parse.User.current();
-		var relation = user.relation("BTstadiums");
-			console.log(stadium);
-
-		relation.add(stadium);
-		user.save();
-	  },
-	  error: function(object, error) {
-	  }
-	});	
-	console.log('You Added It');
-});
-
-
-
-////////////////////
-// $('.diamonbacksWTG').click(function() {
-
-// 	var user = Parse.User.current();
-// 	var relation = user.relation("WTGStadiums");
-// 	relation.add(Stadium);
-// 	user.save();
-	
-// 	console.log('You Added It');
-// });

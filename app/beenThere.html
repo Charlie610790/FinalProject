@@ -34,70 +34,8 @@
             <div class="centerContainer">
             <div class="userBarIndex"></div>
                 <div class="sportHeader">My Stadiums</div>
-                <div class="teamImage falcons">
-                    <div class="left">    
-                        <div class="lefttop">
-                            <div class="teamCity">Atlanta</div>
-                            <div class="teamName">Falcons</div>
-                            
-                        </div>
-                        <div class="leftbottom">
-                            <div class="falconsLogo logoMobile"></div>
-                            <div class="stadiumName">Georiga Dome</div>
-                        </div>
-                    </div>    
-                </div>
-                <div class="teamImage braves">
-                    <div class="left">    
-                        <div class="lefttop">
-                            <div class="teamCity">Atlanta</div>
-                            <div class="teamName">Braves</div>
-                            
-                        </div>
-                        <div class="leftbottom">
-                            <div class="bravesLogo logoMobile"></div>
-                            <div class="stadiumName">Turner Field</div>
-                        </div>
-                    </div>    
-                </div>
-                <a href="teams/Baseball/MLB/redsox.html"><div class="teamImage redSox">
-                    <div class="left">    
-                        <div class="lefttop">
-                            <div class="teamCity">Boston</div>
-                            <div class="teamName">Red Sox</div>
-                            
-                        </div>
-                        <div class="leftbottom">
-                            <div class="redSoxLogo logoMobile"></div>
-                            <div class="stadiumName">Fenway Park</div>
-                        </div>
-                    </div>    
-                </div></a>
-                <div class="teamImage rays">
-                    <div class="left">    
-                        <div class="lefttop">
-                            <div class="teamCity">Tampa Bay</div>
-                            <div class="teamName">Rays</div>
-                            
-                        </div>
-                        <div class="leftbottom">
-                            <div class="raysLogo logoMobile"></div>
-                            <div class="stadiumName">Tropicana Field</div>
-                        </div>
-                    </div>    
-                </div>
-                <div class="teamImage heat">
-                    <div class="left">    
-                        <div class="lefttop">
-                            <div class="teamCity">Miami</div>
-                            <div class="teamName">Heat</div>
-                            
-                        </div>
-                        <div class="leftbottom">
-                            <div class="heatLogo logoMobile"></div>
-                            <div class="stadiumName">American Airlines Arena</div>
-                        </div>
-                    </div>    
+                <div class="myStadiumsBTContainer">
+                    
                 </div>
             </div>
             <div class="footer">
@@ -112,6 +50,21 @@
             </div>
             <div class="usernameIndex"><a href="profile.html"><%= username %></a></div>
             <div class="userAvatarIndex"><a href="profile.html"><img src="<%= Avatar %>" width="25px" height="25px"></a></div>
+        </script>
+
+         <script type="text/template" class="myStadiumsBTTemplate">
+            <div class="teamImage heat">
+                    <div class="left">    
+                        <div class="lefttop">
+                            <div class="teamCity">TEST1</div>
+                            <div class="teamName">TEST2</div>
+                            <div class="stadiumName"><%= StadiumName %></div> 
+                        </div>
+                        <div class="leftbottom">
+                            <div class="heatLogo logoMobile"></div>
+                        </div>
+                    </div>    
+                </div>
         </script>
 
 
@@ -138,6 +91,8 @@
         <script src="scripts/jQuery.headroom.js"></script>
         <script src="scripts/main.js"></script>
         <script src="scripts/toolbarView.js"></script>
-        <script src="scripts/userBar.js"></script>        <!-- endbuild -->
+        <script src="scripts/userBar.js"></script>
+        <script src="scripts/mystadiumsBTView.js"></script>
+               <!-- endbuild -->
 </body>
 </html>
