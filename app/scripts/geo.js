@@ -30,10 +30,6 @@ function success(pos) {
   	user.set("GeoLocation", point);
   	user.save();
 
-  console.log(user);
-
-
-
 };
 
 function error(err) {
@@ -45,23 +41,22 @@ navigator.geolocation.getCurrentPosition(success, error, options);
 ////////////
 
 
-	// var user = Parse.User.current();
-	// var point = new Parse.GeoPoint(crd.latitude, crd.longitude);
- //  	user.set("GeoLocation", point);
- //  	user.save();
-
 $('.nearMe').click(function() {
 	var user = Parse.User.current();
 	var Stadium = Parse.Object.extend("Stadium");
-	var userGeoPoint = user.get("location");
+	var userGeoPoint = user.get("GeoLocation");
 	var query = new Parse.Query(Stadium);
-	query.near("location", userGeoPoint);
+	query.near("GeoLocation", userGeoPoint);
 // Limit what could be a lot of points.
 	query.limit(3);
 // Final list of objects
 	query.find({
-  	success: function(Stadiums) {
-  		return
+  	success: function(results) {
+  		alert("Successfully retrieved " + results.length + " stadiums.");
+  		for (var i = 0; i < results.length; i++) { 
+      var object = results[i];
+      console.log(object.id + ' - ' + object.get('StadiumName'));
+    }
   	}
 });
 	console.log('You Ran It');
