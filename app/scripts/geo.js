@@ -55,7 +55,7 @@ $('.MLBnearMe').click(function() {
   		for (var i = 0; i < results.length; i++) { 
       	var object = results[i];
 
-
+        if object.GeoLocation.withinMiles(100).addClass('BLOWUPCLASS');
 
       	console.log(object.get('StadiumName'));
 

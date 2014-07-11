@@ -34,13 +34,13 @@ var ProfileView = Parse.View.extend({
         var email    =  $('#email-input').val();
 
         user.set({
-        'username' :  username,
-        'email'    :  email
+            'username' :  username,
+            'email'    :  email
         });
 
         user.save().done(function(){
-            console.log('You Saved It!!!')
-                window.location.replace("http://localhost:9000/profile.html");
+            console.log('You Saved It!!!');
+            window.location.replace('http://localhost:9000/profile.html');
 
         });
     },
@@ -54,11 +54,11 @@ var ProfileView = Parse.View.extend({
         Parse.User.requestPasswordReset(email, {
             success: function() {
                 // Password reset request was sent successfully
-                alert("Password reset request was sent successfully.");
+                alert('Password reset request was sent successfully.');
             },
             error: function(error) {
                 // Show the error message somewhere
-                alert("Error: " + error.code + " " + error.message);
+                alert('Error: ' + error.code + ' ' + error.message);
             }
         });
     },
