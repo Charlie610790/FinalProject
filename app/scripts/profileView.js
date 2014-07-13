@@ -15,9 +15,8 @@ var ProfileView = Parse.View.extend({
         'click .saveAvatar'               : 'saveAvatar',
         'click .refreshAvatar'            : 'refreshAvatar',
         'click .updateAvatarButton'       : 'updateAvatarButton',
-        'click .cancelAvatarButtons'       : 'cancelAvatarButton',
-
-
+        'click .cancelAvatarButtons'      : 'cancelAvatarButton',
+        'click .logoutProfile'            : 'logout',
     },
  
  
@@ -107,6 +106,13 @@ var ProfileView = Parse.View.extend({
 
     cancelAvatarButton : function () {
         window.location.reload();    
+    }, 
+
+    logout : function () {
+        Parse.User.logOut().done().setTimeout(function(){
+                window.location.replace("http://localhost:9000/index.html");   
+            },1000);
+        console.log('You Logged Out');
     }, 
  
 });
