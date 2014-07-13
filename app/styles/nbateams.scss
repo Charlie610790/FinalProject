@@ -4,26 +4,26 @@
 ///Basketball
 ///NBA
 
-.diamondbacksLogo {
+.heatLogo {
     display: inline-block;
     height: 100px;
     width: 100px;
     margin-top: 70px;
     margin-left: 0px;
     background-size: cover;
-    background-image: url("../images/logos/diamondbackslogo.png");
+    background-image: url("http://www.thefloridavillager.com/wp-content/uploads/2013/06/Miami_Heat_logo.svg_.png");
 }
 
-.diamondbacks {
-    background-size: cover;
-    background-image: url("../images/Stadiums/ChaseField.jpg");
-    cursor: pointer;
+.heat {
     padding-top: 5px;
+    background-size: cover;
+    background-image: url("http://3.bp.blogspot.com/-82-Vq2BWFFQ/T-S91yLWaBI/AAAAAAAAGp8/lv1gSC-8OHo/s1600/P1360519.jpg");
+    cursor: pointer;
 }
 
 @media screen and (max-width: 380px) {
     .logoMobile {
-        margin-top: 140px;
-        height: 70px;
-        width: 70px;
+   
     }
+
+}
