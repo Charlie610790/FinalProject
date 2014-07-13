@@ -66,3 +66,4 @@ $('.logoutButton').click(function() {
 	window.location.replace("http://localhost:9000/index.html");
 	console.log('You Logged Out');
 });
+///////////////

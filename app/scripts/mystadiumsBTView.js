@@ -16,18 +16,23 @@ var MyStadiumsBTView = Parse.View.extend({
  
     initialize: function(){
         $('.myStadiumsBTContainer').append(this.el);
-        var query = new Parse.Query(User);
-        console.log(Parse.User.current());
+        var user = Parse.User.current();
+        var query = new Parse.Query(user);
         query.equalTo("BTstadiums", "StadiumName");
         console.log(this);
-        query.find({
+        // query.find({
 
-        success: function(stadiums) {
-    // comments now contains the comments for myPost
-        }
-    });
-        this.render();
+        //     success: function(stadiums) {
+        //         for (var i = 0; i < results.length; i++) { 
+        //         var object = results[i];
+
+        //         console.log(object.get('StadiumName'));
+        //         console.log(object.get('TeamLogo'));
+        //         }
+        //     }
+        // }
     },
+        // this.render();
  
     render: function(){
         var renderedTemplate = this.myStadiumsBTTemplate(this.model.attributes);

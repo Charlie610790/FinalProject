@@ -12,6 +12,12 @@ var ProfileView = Parse.View.extend({
     events: {
         'click .saveProfile'              : 'saveProfile',
         'click .changePassword'           : 'changePassword',
+        'click .saveAvatar'               : 'saveAvatar',
+        'click .refreshAvatar'            : 'refreshAvatar',
+        'click .updateAvatarButton'       : 'updateAvatarButton',
+        'click .cancelAvatarButtons'       : 'cancelAvatarButton',
+
+
     },
  
  
@@ -62,6 +68,46 @@ var ProfileView = Parse.View.extend({
             }
         });
     },
+
+    saveAvatar : function () {
+        var fileUpload = $(".image-upload-input")[0];
+        if (fileUpload.files.length > 0) {
+            var file = fileUpload.files[0];
+            var name = "photo.jpg";
+
+
+            var parseFile = new Parse.File(name, file);
+            parseFile.save().done(function () {
+
+                var user = Parse.User.current();
+                user.set({
+                    "Avatar"       : parseFile.url(),
+                    "AvatarImageFile"   : parseFile
+                });
+                user.save().done();
+            });
+
+            setTimeout(function(){
+                window.location.reload();    
+            },1000);
+        }
+    },
+
+
+    refreshAvatar : function () {
+        window.location.reload();    
+    },
+
+    updateAvatarButton : function () {
+        $('.updateAvatarButtons').css("display", "block");
+        $('.cancelAvatarButtons').css("display", "block");
+        $('.updateAvatarButton').css("display", "none");
+
+    }, 
+
+    cancelAvatarButton : function () {
+        window.location.reload();    
+    }, 
  
 });
 

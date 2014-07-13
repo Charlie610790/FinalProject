@@ -1,5 +1,16 @@
 'use strict';
 
+$('.beenThereButton').click(function() {
+  	$( this ).toggleClass('onMyStadiumList').text('On My Stadium List');
+
+});
+
+$('.onMyBucketList').click(function() {
+  	$( this ).toggleClass('wantToGoButton').text('Been There');
+
+});
+
+
 ///////////////Arizona Diamondbacks Been There Button
 $('.diamonbacksBT').click(function() {
 

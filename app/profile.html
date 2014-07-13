@@ -54,7 +54,17 @@
 
         <script type="text/template" class="profileTemplate">
             <div class="editProfile"><a href="editProfile.html">Edit Profile</a></div>       
-            <div class="profileAvatar"><img src="<%= Avatar %>" width="200px" height="200px"></div>        
+            <div class="profileAvatar"><img src="<%= Avatar %>" width="200px" height="200px"></div>
+            <div class="updateAvatarButton">Update Avater Picture</div>
+            <div class="updateAvatarButtons">
+                <input type="file" class="image-upload-input">
+                <div class="saveAvatar">Save Avatar</div>
+                <div class="refreshAvatar">Refresh Avatar</div>
+                <div class="cancelAvatarButtons">Cancel</div>
+
+            </div>
+
+
             <div class="profileUsername">Username: <%= username %></div>
             <div class="profileEmail">Email: <%= email %></div>
             <div class="stadiumsNearMe"><a href="stadiumsNearMe.html">Stadiums Near Me</a></div>

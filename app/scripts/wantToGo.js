@@ -1,3 +1,16 @@
+'use strict';
+
+$('.wantToGoButton').click(function() {
+  	$( this ).toggleClass('onMyBucketList').text('On My Bucketlist');
+
+});
+
+$('.onMyBucketList').click(function() {
+  	$( this ).toggleClass('wantToGoButton').text('Want To Go');
+
+});
+
+
 ///////////////Arizona Diamondbacks Want To Go Button
 $('.diamonbacksWTG').click(function() {
 

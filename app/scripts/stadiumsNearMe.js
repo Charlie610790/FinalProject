@@ -41,9 +41,12 @@ var StadiumNearMeView = Parse.View.extend({
         for (var i = 0; i < results.length; i++) { 
         var object = results[i];
 
-
-
         console.log(object.get('StadiumName'));
+        console.log(object.get('TeamLogo'));
+
+
+        // $('.stadiumsList').append(this.el);
+        // this.render();
 
         }
         alert("Successfully retrieved " + results.length + " stadiums.");
@@ -69,6 +72,8 @@ var StadiumNearMeView = Parse.View.extend({
         var object = results[i];
 
         console.log(object.get('StadiumName'));
+        console.log(object.get('TeamLogo'));
+
 
         }
         alert("Successfully retrieved " + results.length + " stadiums.");
