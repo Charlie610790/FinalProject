@@ -15,6 +15,10 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/headroom.css">
+        <link rel="stylesheet" href="styles/mlbteams.css">
+        <link rel="stylesheet" href="styles/nbateams.css">
+        <link rel="stylesheet" href="styles/nflteams.css">
+        <link rel="stylesheet" href="styles/abaseballteams.css">
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
@@ -34,7 +38,7 @@
             <div class="centerContainer">
             <div class="userBarIndex"></div>
                 <div class="sportHeader">My Bucket List</div>
-                <div class="myStadiumsBTContainer">
+                <div class="myStadiumsWTGContainer">
                     
                 </div>
             </div>
@@ -52,19 +56,19 @@
             <div class="userAvatarIndex"><a href="profile.html"><img src="<%= Avatar %>" width="25px" height="25px"></a></div>
         </script>
 
-         <script type="text/template" class="myStadiumsBTTemplate">
-            <div class="teamImage heat">
-                    <div class="left">    
-                        <div class="lefttop">
-                            <div class="teamCity">TEST1</div>
-                            <div class="teamName">TEST2</div>
-                            <div class="stadiumName"></div> 
-                        </div>
-                        <div class="leftbottom">
-                            <div class="heatLogo logoMobile"></div>
-                        </div>
-                    </div>    
-                </div>
+        <script type="text/template" class="myStadiumsWTGTemplate">
+            <div class="teamImage" style="background-image: url('<%= StadiumPic %>')">
+                <div class="left">    
+                    <div class="lefttop">
+                        <div class="teamCity"><%= CityName %></div>
+                        <div class="teamName"><%= TeamName %></div>
+                        <div class="stadiumName"><%= StadiumName %></div> 
+                    </div>
+                    <div class="leftbottom">
+                        <div class="heatLogo logoMobile" style="background-image: url('<%= TeamLogo %>')"></div>
+                    </div>
+                </div>    
+            </div>
         </script>
 
 
@@ -93,7 +97,7 @@
         <script src="scripts/toolbarView.js"></script>
         <script src="scripts/userBar.js"></script>
         <script src="scripts/geo.js"></script>
-        <script src="scripts/mystadiumsBTView.js"></script>
+        <script src="scripts/mystadiumsWTGView.js"></script>
                <!-- endbuild -->
 </body>
 </html>
