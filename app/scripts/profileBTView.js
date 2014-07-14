@@ -1,13 +1,13 @@
 'use strict';
 
-var MyStadiumsWTGView = Parse.View.extend({
+var ProfileBTView = Parse.View.extend({
  
     className: 'Stadium',
 
     collection: 'StadiumsCollection',
 
  
-    myStadiumsWTGTemplate: _.template($('.myStadiumsWTGTemplate').text()),
+    profileBTTemplate: _.template($('.profileBTTemplate').text()),
 
     events: {
         
@@ -17,25 +17,25 @@ var MyStadiumsWTGView = Parse.View.extend({
     initialize: function(){
         console.log('hi')
         // console.log(this.model)
-        $('.myStadiumsWTGContainer').append(this.el);
+        $('.profileBeenTo').append(this.el);
         this.render();
 
     },
  
     render: function(){
-        var renderedTemplate = this.myStadiumsWTGTemplate(this.model);
+        var renderedTemplate = this.profileBTTemplate(this.model);
         this.$el.html(renderedTemplate);
     },
  
 });
         var user = Parse.User.current();
-        var relation = user.relation("WTGstadiums");
+        var relation = user.relation("BTstadiums");
         relation.query().find({
 
             success: function(stadiums) {
                 console.log(stadiums)
                 stadiums.forEach(function(stadium){
-                    new MyStadiumsWTGView({model: stadium.attributes})
+                    new ProfileBTView({model: stadium.attributes})
                 });
             }
         });

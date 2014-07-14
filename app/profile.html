@@ -61,10 +61,7 @@
                 <div class="saveAvatar">Save Avatar</div>
                 <div class="refreshAvatar">Refresh Avatar</div>
                 <div class="cancelAvatarButtons">Cancel</div>
-
             </div>
-
-
             <div class="profileUsername">Username: <%= username %></div>
             <div class="profileEmail">Email: <%= email %></div>
             <div class="stadiumsNearMe"><a href="stadiumsNearMe.html">Stadiums Near Me</a></div>
@@ -72,6 +69,14 @@
             <div class="profileBeenTo"></div>
             <div class="profileMyStadiums">Want To Go</div>
             <div class="profileWantToGo"></div>
+        </script>
+
+        <script type="text/template" class="profileBTTemplate">
+            <div class="profileBT"><a href="<%= StadiumPageLink %>"><img src="<%= TeamLogo %>" height="100px" width="100px"></a></div>
+        </script>
+
+        <script type="text/template" class="profileWTGTemplate">
+            <div class="profileBT"><a href="<%= StadiumPageLink %>"><img src="<%= TeamLogo %>" height="100px" width="100px"></a></div>
         </script>
 
 
@@ -102,6 +107,10 @@
         <script src="scripts/userBar.js"></script>
         <script src="scripts/geo.js"></script>   
         <script src="scripts/profileView.js"></script>
+        <script src="scripts/profileBTView.js"></script>
+        <script src="scripts/profileWTGView.js"></script>
+
+
              <!-- endbuild -->
 </body>
 </html>

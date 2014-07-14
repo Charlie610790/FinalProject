@@ -14,6 +14,12 @@ a {
 
 }
 
+.profileBT {
+    margin: 0px auto;
+    display: inline-block;
+    padding: 15px;
+}
+
 .fieldHopperLogo {
     margin: 0px auto;
     height: 300px;
@@ -120,15 +126,13 @@ a {
 
 
 .profileBeenTo {
-    height: 300px;
-    background-color: yellow;
-    widht: 80%
+    display: block;
+    background-color: #99bda1;
 }
 
 .profileWantToGo {
-    height: 300px;
-    background-color: yellow;
-    widht: 80%
+    display: block;
+    background-color: #99bda1;
 }
 
 .profileMyStadiums {
@@ -142,7 +146,7 @@ a {
 .profileBody {
     width: 90%;
     margin: 0px auto;
-    background-color: gray;
+    background-color: #7b9982;
     padding: 25px;
     font-size: 20px;
 }
