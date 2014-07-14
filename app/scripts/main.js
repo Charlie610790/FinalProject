@@ -7,10 +7,20 @@ var User = Parse.Object.extend ({
 });
 
 var UserCollection = Parse.Collection.extend({
-    model: User
+    model: 'User'
 });
 
 var collection = new UserCollection();
+
+var Stadium = Parse.Object.extend ({
+	className: 'Stadium'
+});
+
+var StadiumCollection = Parse.Collection.extend({
+    model: 'Stadium'
+});
+
+var stadiumCollection = new StadiumCollection();
 
 ///////////////Signup Button
 
