@@ -2,7 +2,7 @@
 // endbower
 
 body {
-    background: #2C2C2E;
+    background: #00390c;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     color: #333;
     margin: 0px;
@@ -12,6 +12,18 @@ a {
     color: white;
     text-decoration: none
 
+}
+
+.fieldHopperLogo {
+    margin: 0px auto;
+    height: 300px;
+    width: 300px;
+    background-size: 300px 300px;
+    margin-top: 10px;
+    // font-size: 32px;
+    // color: white;
+    // text-shadow: 2px 2px 2px #5E626B;
+    background-image: url("../images/FieldHopperLogo.png");
 }
 
 .refreshAvatar {
@@ -146,7 +158,7 @@ a {
     display: block;
     cursor: pointer;
     text-align: center;
-    color: white;
+    color: #00390c;
     margin: 0px auto;
 
 }
@@ -157,6 +169,7 @@ a {
 }
 
 .landingButtons {
+    display: inline-block;
     margin: 0px auto;
     background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
     width: 100px;
@@ -188,6 +201,11 @@ a {
         -o-filter: brightness(80%);
         filter: brightness(80%);
     }
+}
+
+.landginButtonLeft {
+    margin-left: 30%;
+
 }
 
 .landingButtonsTop {
@@ -234,7 +252,7 @@ a {
     max-width: 1000px;
     display: block;
     height: 100px;
-    background-color: gray;
+    background-color: #536c59;
     z-index: 3;
 }
 
@@ -303,19 +321,20 @@ a {
     height: 65px;
     position: fixed;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%); 
+    background-color: #fdeb99; 
     z-index: 4;
 }
 
 .logo {
     margin: 0px auto;
-    height: 45px;
-    width: 100px;
-    background-size: 100px 45px;
-    margin-top: 14px;
-    font-size: 32px;
-    color: white;
-    text-shadow: 2px 2px 2px #5E626B;
+    height: 60px;
+    width: 200px;
+    background-size: 200px 60px;
+    margin-top: 3px;
+    // font-size: 32px;
+    // color: white;
+    // text-shadow: 2px 2px 2px #5E626B;
+    background-image: url("../images/Field-Hopper-Wordmark.png");
 }
 
 .centerContainer {
@@ -323,7 +342,7 @@ a {
     margin: 0px auto;
     width: calc(80% - 80px);
     max-width: 1000px;
-    background-color: #dedfe0;
+    background-color: #536c59;
     box-shadow: 0px 0px 4px gray;
     height: 100%;
 }
@@ -381,7 +400,7 @@ a {
 .sportHeader {
     display: block;
     margin: 0px auto;
-    background-color: black;
+    background-color: #011906;
     padding-left: 10px;
     padding-top: 105px;
     font-size: 35px;
@@ -447,6 +466,10 @@ a {
     margin-left: 5px;
     font-size: 25px;
     text-shadow: 2px 2px 2px #5E626B;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .teamName {
@@ -454,6 +477,10 @@ a {
     font-size: 25px;
     margin-left: 4px;
     text-shadow: 2px 2px 2px #5E626B;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .logoTeamPage {
@@ -468,6 +495,10 @@ a {
     text-shadow: 2px 2px 2px #5E626B;
     max-width: 500px;
     margin-bottom: 20px;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .doublenameStadium {
@@ -613,14 +644,15 @@ a {
     display: block;
     height: 65px;
     width: 100%;
-    background: linear-gradient(to bottom, rgba(79,133,187,1) 0%,rgba(79,133,187,1) 100%); 
+    background-color: #fdeb99;
+    color: #00390c;
 }
 
 .footerText {
     display: block;
     text-align: center;
     padding-top: 20px;
-    color: white;
+    color: #00390c;
 }
 
 .stadiumMap {
