@@ -476,6 +476,7 @@ margin-left: 28%;
     margin-left: 5px;
     font-size: 25px;
     text-shadow: 2px 2px 2px #5E626B;
+    cursor: pointer;
 
     &:hover {
         text-decoration: underline;
@@ -487,6 +488,7 @@ margin-left: 28%;
     font-size: 25px;
     margin-left: 4px;
     text-shadow: 2px 2px 2px #5E626B;
+    cursor: pointer;
 
     &:hover {
         text-decoration: underline;
@@ -497,6 +499,7 @@ margin-left: 28%;
     margin-top: 0px;
     height: 70px;
     width: 70px;
+    cursor: pointer;
 }
 
 .stadiumName {
@@ -505,6 +508,7 @@ margin-left: 28%;
     text-shadow: 2px 2px 2px #5E626B;
     max-width: 500px;
     margin-bottom: 20px;
+    cursor: pointer;
 
     &:hover {
         text-decoration: underline;

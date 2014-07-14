@@ -12,13 +12,14 @@
     margin-left: 0px;
     background-size: cover;
     background-image: url("../images/logos/heatlogo.png");
+    cursor: pointer;
+
 }
 
 .heat {
     padding-top: 5px;
     background-size: cover;
     background-image: url("../images/Stadiums/AmericanAirlinesArena.jpg");
-    cursor: pointer;
 }
 
 @media screen and (max-width: 380px) {
