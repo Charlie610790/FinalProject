@@ -1,5 +1,20 @@
 // bower:scss
 // endbower
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #4d6953;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #4d6953;
+    opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #4d6953;
+    opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #4d6953;
+}
+
 
 input {
     display: block;
@@ -23,14 +38,13 @@ input {
 
 .signupButton {
     margin: 0px auto;
-    
-    background: linear-gradient(to bottom, rgba(125,126,125,1) 0%,rgba(89,89,89,1) 100%); 
+    background: linear-gradient(to bottom, rgba(0,99,44,1) 0%,rgba(0,56,28,1) 100%);
     width: 100px;
-    height: 30px;
+    height: 50px;
     margin-bottom: 15px;
-    line-height: 30px;
+    line-height: 50px;
     text-align: center;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: bolder;
     color: white;
     font-family: helvetica;
@@ -61,5 +75,6 @@ input {
     text-align: center;
     margin-bottom: 10px;
     padding-top: 100px;
+    color: #00390c;
 
 }
