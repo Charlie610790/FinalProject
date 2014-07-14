@@ -20,24 +20,23 @@ var MyStadiumsBTView = Parse.View.extend({
         var query = new Parse.Query(user);
         query.equalTo("BTstadiums", "StadiumName");
         console.log(this);
-        // query.find({
+        query.find({
 
-        //     success: function(stadiums) {
-        //         for (var i = 0; i < results.length; i++) { 
-        //         var object = results[i];
+            success: function(stadiums) {
+                for (var i = 0; i < results.length; i++) { 
+                    var object = results[i];
 
-        //         console.log(object.get('StadiumName'));
-        //         console.log(object.get('TeamLogo'));
-        //         }
-        //     }
-        // }
+                    console.log(object.get('StadiumName'));
+                    console.log(object.get('TeamLogo'));
+                }
+            }
+        }
     },
-        // this.render();
+        this.render();
  
     render: function(){
         var renderedTemplate = this.myStadiumsBTTemplate(this.model.attributes);
         this.$el.html(renderedTemplate);
-        
     },
  
 });

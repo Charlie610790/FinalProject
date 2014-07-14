@@ -2,9 +2,9 @@
 
 var StadiumNearMeView = Parse.View.extend({
  
-    className: 'User',
+    className: 'Stadium',
 
-    collection: 'UserCollection',
+    collection: 'StadiumCollection',
 
  
     stadiumsnearmeTemplate: _.template($('.stadiumsnearmeTemplate').text()),
@@ -70,6 +70,8 @@ var StadiumNearMeView = Parse.View.extend({
     success: function(results) {
         for (var i = 0; i < results.length; i++) { 
         var object = results[i];
+
+        
 
         console.log(object.get('StadiumName'));
         console.log(object.get('TeamLogo'));
