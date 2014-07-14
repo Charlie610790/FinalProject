@@ -15,6 +15,11 @@
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="styles/headroom.css">
+        <link rel="stylesheet" href="styles/mlbteams.css">
+        <link rel="stylesheet" href="styles/nbateams.css">
+        <link rel="stylesheet" href="styles/nflteams.css">
+        <link rel="stylesheet" href="styles/abaseballteams.css">
+
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
         <script src="../bower_components/modernizr/modernizr.js"></script>
@@ -53,18 +58,18 @@
         </script>
 
          <script type="text/template" class="myStadiumsBTTemplate">
-            <div class="teamImage heat">
+            <div class="teamImage" style="background-image: url('<%= StadiumPic %>')">
                     <div class="left">    
                         <div class="lefttop">
-                            <div class="teamCity">TEST1</div>
-                            <div class="teamName">TEST2</div>
-                            <div class="stadiumName"></div> 
+                            <div class="teamCity"><%= CityName %></div>
+                            <div class="teamName"><%= TeamName %></div>
+                            <div class="stadiumName"><%= StadiumName %></div> 
                         </div>
                         <div class="leftbottom">
-                            <div class="heatLogo logoMobile"></div>
+                            <div class="heatLogo logoMobile" style="background-image: url('<%= TeamLogo %>')"></div>
                         </div>
                     </div>    
-                </div>
+            </div>
         </script>
 
 
