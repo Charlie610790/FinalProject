@@ -11,6 +11,31 @@ $('.onMyBucketList').click(function() {
 });
 
 
+///////////////
+///A BASEBALL
+///////////////Greenville Drive Want To Go Button
+$('.driveWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("qkPUmHn2Yr", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////
+
+
+///////////////
+///MLB
 ///////////////Arizona Diamondbacks Want To Go Button
 $('.diamonbacksWTG').click(function() {
 

@@ -10,6 +10,7 @@ var MyStadiumsBTView = Parse.View.extend({
     myStadiumsBTTemplate: _.template($('.myStadiumsBTTemplate').text()),
 
     events: {
+        //MLB Baseball Teams
         'click .DiamondbacksBTRemove'              : 'DiamondbacksBTRemove',
         'click .BravesBTRemove'                    : 'BravesBTRemove',
         'click .OriolesBTRemove'                   : 'OriolesBTRemove',
@@ -40,7 +41,11 @@ var MyStadiumsBTView = Parse.View.extend({
         'click .RangersBTRemove'                   : 'RangersBTRemove',
         'click .BlueJaysBTRemove'                  : 'BlueJaysBTRemove',
         'click .NationalsBTRemove'                 : 'NationalsBTRemove',
+        //A Baseball Teams
+        'click .DriveBTRemove'                     : 'DriveBTRemove',
+        //NBA Basketball Teams
         'click .HeatBTRemove'                      : 'HeatBTRemove',
+        //NFL Football Teams
         'click .PackersBTRemove'                   : 'PackersBTRemove',
         'click .FalconsBTRemove'                   : 'FalconsBTRemove',
         'click .BuccaneersBTRemove'                : 'BuccaneersBTRemove',
@@ -65,6 +70,25 @@ var MyStadiumsBTView = Parse.View.extend({
         var StadiumBT = Parse.Object.extend('StadiumBT');
         var query = new Parse.Query(Stadium);
         query.get('OuRc4iLiJR', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('BTstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/beenThere.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
+    },
+
+    DriveBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('qkPUmHn2Yr', {
         success: function(stadium) {
             var user = Parse.User.current();
             var relation = user.relation('BTstadiums');

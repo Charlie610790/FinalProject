@@ -13,12 +13,15 @@
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <link rel="stylesheet" href="styles/abaseballteams.css">
-        <link rel="stylesheet" href="styles/headroom.css">
+        <link rel="stylesheet" href="../../../styles/mlbTeams.css">
+                <link rel="stylesheet" href="../../../styles/abaseballteams.css">
+
+        <link rel="stylesheet" href="../../../styles/main.css">
+        <link rel="stylesheet" href="../../../styles/headroom.css">
+
         <!-- endbuild -->
         <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="../bower_components/modernizr/modernizr.js"></script>
+        <script src="../../../../bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
 
     </head>
@@ -33,25 +36,29 @@
                 <div class="logo"></div>
             </div>
             <div class="centerContainer">
-                <div class="userBarIndex"></div>
+            <div class="userBarIndex"></div>
                 <div class="sportHeader">Baseball</div>
-                <div class="divisionHeader">A</div>
-                <div class="teamImage Drive">
+                <div class="divisionHeader">MLB</div>
+                <div class="teamImage Drive teamPage">
                     <div class="left">    
                         <div class="lefttop">
-                            <div class="teamCity"><a href="/teams/Baseball/A/drive.html">Greenville</a></div>
-                            <div class="teamName"><a href="/teams/Baseball/A/drive.html">Drive</a></div>
-                            <div class="stadiumName"><a href="/teams/Baseball/A/drive.html">Fluor Field</a></div>                            
+                            <div class="teamCity">GREENVILLE</div>
+                            <div class="teamName">DRIVE</div>
+                            <div class="stadiumName">Fluor Field</div>
                         </div>
                         <div class="leftbottom">
-                            <a href="/teams/Baseball/A/drive.html"><div class="driveLogo logoMobile"></div></a>
+                            <div class="driveLogo logoTeamPage"></div>
                         </div>
                     </div>    
                     <div class="right">
-                        <div class="wantToGoButton teamsMobileButtons">Want To Go</div>
-                        <div class="beenThereButton teamsMobileButtons">Been There</div>     
+                        <div class="driveWTG angelsWTG wantToGoButton teamPageButton">Want To Go</div>
+                        <div class="driveBT angelsBT beenThereButton teamPageButton">Been There</div>     
                     </div>
                 </div>
+                <a href=""><div class="teamInfo">Park Info</div></a>
+                <a href=""><div class="teamInfo">Team Info</div></a>
+                <a href=""><div class="teamInfo">Fan Pics</div></a>
+    
             </div>
             <div class="footer">
                 <div class="footerText">&#169; 2014 Charles M. Jones</div>
@@ -63,16 +70,16 @@
             <div class="backIndex">
                 <a href="javascript:history.back()">Back</a>
             </div>
-            <div class="usernameIndex"><a href="profile.html"><%= username %></a></div>
-            <div class="userAvatarIndex"><a href="profile.html"><img src="<%= Avatar %>" width="25px" height="25px"></a></div>
+            <div class="usernameIndex"><a href="../../../profile.html"><%= username %></a></div>
+            <div class="userAvatarIndex"><a href="../../../profile.html"><img src="<%= Avatar %>" width="25px" height="25px"></a></div>
         </script>
 
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
-        <script src="../bower_components/jquery/dist/jquery.js"></script>
+        <script src="../../../../bower_components/jquery/dist/jquery.js"></script>
         <script src="//www.parsecdn.com/js/parse-1.2.18.min.js"></script>
-        <script src="../bower_components/underscore/underscore.js"></script>
+        <script src="../../../../bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -87,14 +94,14 @@
         </script>
 
         <!-- build:js({app,.tmp}) scripts/main.js -->
-        <script src="scripts/headroom.js"></script>
-        <script src="scripts/jQuery.headroom.js"></script>
-        <script src="scripts/main.js"></script>
-        <script src="scripts/toolbarView.js"></script>
-        <script src="scripts/userBar.js"></script>
-        <script src="scripts/geo.js"></script>
-        <script src="scripts/wantToGo.js"></script>
-        <script src="scripts/beenThere.js"></script>
-        <!-- endbuild -->
+        <script src="../../../scripts/headroom.js"></script>
+        <script src="../../../scripts/jQuery.headroom.js"></script>
+        <script src="../../../scripts/main.js"></script>
+        <script src="../../../scripts/toolbarView.js"></script>
+        <script src="../../../scripts/userBar.js"></script>
+        <script src="../../../scripts/geo.js"></script>        
+        <script src="../../../scripts/wantToGo.js"></script>
+        <script src="../../../scripts/beenThere.js"></script>
+                <!-- endbuild -->
 </body>
 </html>

@@ -10,6 +10,7 @@ var MyStadiumsWTGView = Parse.View.extend({
     myStadiumsWTGTemplate: _.template($('.myStadiumsWTGTemplate').text()),
 
     events: {
+        //MLB Baseball Teams
         'click .DiamondbacksWTGRemove'              : 'DiamondbacksWTGRemove',
         'click .BravesWTGRemove'                    : 'BravesWTGRemove',
         'click .OriolesWTGRemove'                   : 'OriolesWTGRemove',
@@ -40,7 +41,11 @@ var MyStadiumsWTGView = Parse.View.extend({
         'click .RangersWTGRemove'                   : 'RangersWTGRemove',
         'click .BlueJaysWTGRemove'                  : 'BlueJaysWTGRemove',
         'click .NationalsWTGRemove'                 : 'NationalsWTGRemove',
+        //A Baseball Teams
+        'click .DriveWTGRemove'                     : 'DriveWTGRemove',
+        //NBA Basketball Teams
         'click .HeatWTGRemove'                      : 'HeatWTGRemove',
+        //NFL Football Teams
         'click .PackersWTGRemove'                   : 'PackersWTGRemove',
         'click .FalconsWTGRemove'                   : 'FalconsWTGRemove',
         'click .BuccaneersWTGRemove'                : 'BuccaneersWTGRemove',
@@ -59,6 +64,25 @@ var MyStadiumsWTGView = Parse.View.extend({
     render: function(){
         var renderedTemplate = this.myStadiumsWTGTemplate(this.model);
         this.$el.html(renderedTemplate);
+    },
+
+    DriveWTGRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumWTG');
+        var query = new Parse.Query(Stadium);
+        query.get('qkPUmHn2Yr', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('WTGstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/bucketList.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
     },
 
     DiamondbacksWTGRemove: function(){
