@@ -40,6 +40,12 @@ var MyStadiumsBTView = Parse.View.extend({
         'click .RangersBTRemove'                   : 'RangersBTRemove',
         'click .BlueJaysBTRemove'                  : 'BlueJaysBTRemove',
         'click .NationalsBTRemove'                 : 'NationalsBTRemove',
+        'click .HeatBTRemove'                      : 'HeatBTRemove',
+        'click .PackersBTRemove'                   : 'PackersBTRemove',
+        'click .FalconsBTRemove'                   : 'FalconsBTRemove',
+        'click .BuccaneersBTRemove'                : 'BuccaneersBTRemove',
+        'click .NYGiantsBTRemove'                  : 'NYGiantsBTRemove',
+
     },
  
  
@@ -610,6 +616,101 @@ var MyStadiumsBTView = Parse.View.extend({
         var StadiumBT = Parse.Object.extend('StadiumBT');
         var query = new Parse.Query(Stadium);
         query.get('qZpb6kBfF6', {
+            success: function(stadium) {
+                var user = Parse.User.current();
+                var relation = user.relation('BTstadiums');
+
+                relation.remove(stadium);
+                user.save().done(function(){
+                window.location.replace('http://localhost:9000/beenThere.html');
+
+                });
+            },
+            error: function(object, error) {
+            }
+        });
+    }, 
+
+    HeatBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('k1sqDuziT8', {
+            success: function(stadium) {
+                var user = Parse.User.current();
+                var relation = user.relation('BTstadiums');
+
+                relation.remove(stadium);
+                user.save().done(function(){
+                window.location.replace('http://localhost:9000/beenThere.html');
+
+                });
+            },
+            error: function(object, error) {
+            }
+        });
+    }, 
+
+    PackersBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('MlKK2jtNj8', {
+            success: function(stadium) {
+                var user = Parse.User.current();
+                var relation = user.relation('BTstadiums');
+
+                relation.remove(stadium);
+                user.save().done(function(){
+                window.location.replace('http://localhost:9000/beenThere.html');
+
+                });
+            },
+            error: function(object, error) {
+            }
+        });
+    }, 
+
+    NYGiantsBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('D9V0N8VO8N', {
+            success: function(stadium) {
+                var user = Parse.User.current();
+                var relation = user.relation('BTstadiums');
+
+                relation.remove(stadium);
+                user.save().done(function(){
+                window.location.replace('http://localhost:9000/beenThere.html');
+
+                });
+            },
+            error: function(object, error) {
+            }
+        });
+    }, 
+
+    FalconsBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('LurGDdFPVp', {
+            success: function(stadium) {
+                var user = Parse.User.current();
+                var relation = user.relation('BTstadiums');
+
+                relation.remove(stadium);
+                user.save().done(function(){
+                window.location.replace('http://localhost:9000/beenThere.html');
+
+                });
+            },
+            error: function(object, error) {
+            }
+        });
+    }, 
+
+    BuccaneersBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('Ko7EBJBPdj', {
             success: function(stadium) {
                 var user = Parse.User.current();
                 var relation = user.relation('BTstadiums');
