@@ -74,6 +74,26 @@ $('.oriolesBT').click(function() {
 });
 ///////////////
 
+$('.OriolesBTRemove').click(function() {
+	console.log('Start');
+
+	var Stadium = Parse.Object.extend('Stadium');
+	var query = new Parse.Query(Stadium);
+	query.get('s6rg4vjaBL', {
+	    success: function(stadium) {
+		    var user = Parse.User.current();
+		    var relation = user.relation('BTstadiums');
+			console.log(stadium);
+
+		    relation.remove(stadium);
+		    user.save();
+	    },
+	    error: function(object, error) {
+	    }
+	});
+	console.log('You Added It');
+});
+
 ///////////////Boston Red Sox Been There Button
 $('.redsoxBT').click(function() {
 
@@ -262,6 +282,10 @@ $('.royalsBT').click(function() {
 	console.log('You Added It');
 });
 ///////////////
+
+$('.RoyalsBTRemove').click(function() {
+	console.log('You Removed It');
+});
 
 ///////////////Los Angeles Angels Been There Button
 $('.angelsBT').click(function() {

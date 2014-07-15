@@ -15,7 +15,6 @@ var MyStadiumsWTGView = Parse.View.extend({
  
  
     initialize: function(){
-        console.log('hi')
         // console.log(this.model)
         $('.myStadiumsWTGContainer').append(this.el);
         this.render();
@@ -33,7 +32,6 @@ var MyStadiumsWTGView = Parse.View.extend({
         relation.query().find({
 
             success: function(stadiums) {
-                console.log(stadiums)
                 stadiums.forEach(function(stadium){
                     new MyStadiumsWTGView({model: stadium.attributes})
                 });

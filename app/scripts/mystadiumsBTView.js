@@ -15,7 +15,6 @@ var MyStadiumsBTView = Parse.View.extend({
  
  
     initialize: function(){
-        console.log('hi')
         // console.log(this.model)
         $('.myStadiumsBTContainer').append(this.el);
         this.render();
@@ -33,7 +32,6 @@ var MyStadiumsBTView = Parse.View.extend({
         relation.query().find({
 
             success: function(stadiums) {
-                console.log(stadiums)
                 stadiums.forEach(function(stadium){
                     new MyStadiumsBTView({model: stadium.attributes})
                 });

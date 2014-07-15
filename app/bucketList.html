@@ -60,12 +60,12 @@
             <div class="teamImage" style="background-image: url('<%= StadiumPic %>')">
                 <div class="left">    
                     <div class="lefttop">
-                        <div class="teamCity"><%= CityName %></div>
-                        <div class="teamName"><%= TeamName %></div>
-                        <div class="stadiumName"><%= StadiumName %></div> 
+                        <div class="teamCity"><a href="<%= StadiumPageLink %>"><%= CityName %></a></div>
+                        <div class="teamName"><a href="<%= StadiumPageLink %>"><%= TeamName %></a></div>
+                        <div class="stadiumName"><a href="<%= StadiumPageLink %>"><%= StadiumName %></a></div> 
                     </div>
                     <div class="leftbottom">
-                        <div class="heatLogo logoMobile" style="background-image: url('<%= TeamLogo %>')"></div>
+                        <a href="<%= StadiumPageLink %>"><div class="heatLogo logoMobile" style="background-image: url('<%= TeamLogo %>')"></div></a>
                     </div>
                 </div>    
             </div>

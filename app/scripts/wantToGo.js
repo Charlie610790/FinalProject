@@ -74,6 +74,25 @@ $('.oriolesWTG').click(function() {
 });
 ///////////////
 
+$('.oriolesWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("s6rg4vjaBL", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
+			console.log(stadium);
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+
 ///////////////Boston Red Sox Want To Go Button
 $('.redsoxWTG').click(function() {
 
