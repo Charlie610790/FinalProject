@@ -41,6 +41,10 @@ var MyStadiumsWTGView = Parse.View.extend({
         'click .BlueJaysWTGRemove'                  : 'BlueJaysWTGRemove',
         'click .NationalsWTGRemove'                 : 'NationalsWTGRemove',
         'click .HeatWTGRemove'                      : 'HeatWTGRemove',
+        'click .PackersWTGRemove'                   : 'PackersWTGRemove',
+        'click .FalconsWTGRemove'                   : 'FalconsWTGRemove',
+        'click .BuccaneersWTGRemove'                : 'BuccaneersWTGRemove',
+        'click .NYGiantsWTGRemove'                  : 'NYGiantsWTGRemove',
 
     },
  
