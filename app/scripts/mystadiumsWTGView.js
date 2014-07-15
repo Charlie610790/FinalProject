@@ -40,6 +40,8 @@ var MyStadiumsWTGView = Parse.View.extend({
         'click .RangersWTGRemove'                   : 'RangersWTGRemove',
         'click .BlueJaysWTGRemove'                  : 'BlueJaysWTGRemove',
         'click .NationalsWTGRemove'                 : 'NationalsWTGRemove',
+        'click .HeatWTGRemove'                      : 'HeatWTGRemove',
+
     },
  
  
@@ -610,6 +612,101 @@ var MyStadiumsWTGView = Parse.View.extend({
         var StadiumBT = Parse.Object.extend('StadiumWTG');
         var query = new Parse.Query(Stadium);
         query.get('qZpb6kBfF6', {
+            success: function(stadium) {
+                var user = Parse.User.current();
+                var relation = user.relation('WTGstadiums');
+
+                relation.remove(stadium);
+                user.save().done(function(){
+                window.location.replace('http://localhost:9000/beenThere.html');
+
+                });
+            },
+            error: function(object, error) {
+            }
+        });
+    }, 
+
+    HeatWTGRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumWTG');
+        var query = new Parse.Query(Stadium);
+        query.get('k1sqDuziT8', {
+            success: function(stadium) {
+                var user = Parse.User.current();
+                var relation = user.relation('WTGstadiums');
+
+                relation.remove(stadium);
+                user.save().done(function(){
+                window.location.replace('http://localhost:9000/beenThere.html');
+
+                });
+            },
+            error: function(object, error) {
+            }
+        });
+    }, 
+
+    PackersWTGRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumWTG');
+        var query = new Parse.Query(Stadium);
+        query.get('MlKK2jtNj8', {
+            success: function(stadium) {
+                var user = Parse.User.current();
+                var relation = user.relation('WTGstadiums');
+
+                relation.remove(stadium);
+                user.save().done(function(){
+                window.location.replace('http://localhost:9000/beenThere.html');
+
+                });
+            },
+            error: function(object, error) {
+            }
+        });
+    }, 
+
+    NYGiantsWTGRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumWTG');
+        var query = new Parse.Query(Stadium);
+        query.get('D9V0N8VO8N', {
+            success: function(stadium) {
+                var user = Parse.User.current();
+                var relation = user.relation('WTGstadiums');
+
+                relation.remove(stadium);
+                user.save().done(function(){
+                window.location.replace('http://localhost:9000/beenThere.html');
+
+                });
+            },
+            error: function(object, error) {
+            }
+        });
+    }, 
+
+    FalconsWTGRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumWTG');
+        var query = new Parse.Query(Stadium);
+        query.get('LurGDdFPVp', {
+            success: function(stadium) {
+                var user = Parse.User.current();
+                var relation = user.relation('WTGstadiums');
+
+                relation.remove(stadium);
+                user.save().done(function(){
+                window.location.replace('http://localhost:9000/beenThere.html');
+
+                });
+            },
+            error: function(object, error) {
+            }
+        });
+    }, 
+
+    BuccaneersWTGRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumWTG');
+        var query = new Parse.Query(Stadium);
+        query.get('Ko7EBJBPdj', {
             success: function(stadium) {
                 var user = Parse.User.current();
                 var relation = user.relation('WTGstadiums');

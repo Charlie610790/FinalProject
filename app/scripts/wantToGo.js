@@ -20,7 +20,6 @@ $('.diamonbacksWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -41,7 +40,6 @@ $('.bravesWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -62,7 +60,6 @@ $('.oriolesWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -82,7 +79,6 @@ $('.oriolesWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -102,7 +98,6 @@ $('.redsoxWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -123,7 +118,6 @@ $('.cubsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -144,7 +138,6 @@ $('.whitesoxWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -165,7 +158,6 @@ $('.redsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -186,7 +178,6 @@ $('.indiansWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -207,7 +198,6 @@ $('.rockiesWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -228,7 +218,6 @@ $('.tigersWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -249,7 +238,6 @@ $('.astrosWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -270,7 +258,6 @@ $('.royalsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -291,7 +278,6 @@ $('.angelsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -312,7 +298,6 @@ $('.dodgersWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -333,7 +318,6 @@ $('.marlinsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -354,7 +338,6 @@ $('.brewersWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -375,7 +358,6 @@ $('.twinsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -396,7 +378,6 @@ $('.metsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -417,7 +398,6 @@ $('.yankeesWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -438,7 +418,6 @@ $('.athleticsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -459,7 +438,6 @@ $('.philliesWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -480,7 +458,6 @@ $('.piratesWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -501,7 +478,6 @@ $('.padresWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -522,7 +498,6 @@ $('.giantsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -543,7 +518,6 @@ $('.marinersWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -564,7 +538,6 @@ $('.cardinalsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -585,7 +558,6 @@ $('.raysWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -606,7 +578,6 @@ $('.rangersWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -627,7 +598,6 @@ $('.rangersWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -648,7 +618,6 @@ $('.bluejaysWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -669,7 +638,6 @@ $('.nationalsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -691,7 +659,6 @@ $('.falconsWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -706,11 +673,10 @@ $('.packersWTG').click(function() {
 
 	var Stadium = Parse.Object.extend("Stadium");
 	var query = new Parse.Query(Stadium);
-	query.get("JX8eUbCrd4", {
+	query.get("MlKK2jtNj8", {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -725,11 +691,10 @@ $('.nygiantsWTG').click(function() {
 
 	var Stadium = Parse.Object.extend("Stadium");
 	var query = new Parse.Query(Stadium);
-	query.get("yrBTCkPJzn", {
+	query.get("D9V0N8VO8N", {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
 
 		relation.add(stadium);
 		user.save();
@@ -748,7 +713,28 @@ $('.buccaneersWTG').click(function() {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("WTGstadiums");
-			console.log(stadium);
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+
+///////////////
+///NBA
+//////////////
+///////////////Atlanta Falcons Want To Go Button
+$('.heatWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("k1sqDuziT8", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
 
 		relation.add(stadium);
 		user.save();
