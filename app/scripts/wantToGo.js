@@ -680,3 +680,81 @@ $('.nationalsWTG').click(function() {
 	console.log('You Added It');
 });
 ///////////////
+///NFL
+//////////////
+///////////////Atlanta Falcons Want To Go Button
+$('.falconsWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("LurGDdFPVp", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
+			console.log(stadium);
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////Green Bay Packers Want To Go Button
+$('.packersWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("JX8eUbCrd4", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
+			console.log(stadium);
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////New York Giants Want To Go Button
+$('.nygiantsWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("yrBTCkPJzn", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
+			console.log(stadium);
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////Tampa Bay Buccaneers Want To Go Button
+$('.buccaneersWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("Ko7EBJBPdj", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
+			console.log(stadium);
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});

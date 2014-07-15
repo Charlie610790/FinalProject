@@ -20,7 +20,6 @@ $('.diamonbacksBT').click(function() {
 	    success: function(stadium) {
 		    var user = Parse.User.current();
 		    var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 		    relation.add(stadium);
 		    user.save();
@@ -41,7 +40,6 @@ $('.bravesBT').click(function() {
 	    success: function(stadium) {
 		    var user = Parse.User.current();
 		    var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 		    relation.add(stadium);
 		    user.save();
@@ -62,7 +60,6 @@ $('.oriolesBT').click(function() {
 	    success: function(stadium) {
 		    var user = Parse.User.current();
 		    var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 		    relation.add(stadium);
 		    user.save();
@@ -74,26 +71,6 @@ $('.oriolesBT').click(function() {
 });
 ///////////////
 
-$('.OriolesBTRemove').click(function() {
-	console.log('Start');
-
-	var Stadium = Parse.Object.extend('Stadium');
-	var query = new Parse.Query(Stadium);
-	query.get('s6rg4vjaBL', {
-	    success: function(stadium) {
-		    var user = Parse.User.current();
-		    var relation = user.relation('BTstadiums');
-			console.log(stadium);
-
-		    relation.remove(stadium);
-		    user.save();
-	    },
-	    error: function(object, error) {
-	    }
-	});
-	console.log('You Added It');
-});
-
 ///////////////Boston Red Sox Been There Button
 $('.redsoxBT').click(function() {
 
@@ -103,7 +80,6 @@ $('.redsoxBT').click(function() {
 	    success: function(stadium) {
 		    var user = Parse.User.current();
 		    var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 		    relation.add(stadium);
 		    user.save();
@@ -124,7 +100,6 @@ $('.cubsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -145,7 +120,6 @@ $('.whitesoxBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -166,7 +140,6 @@ $('.redsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -187,7 +160,6 @@ $('.indiansBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -208,7 +180,6 @@ $('.rockiesBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -229,7 +200,6 @@ $('.tigersBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -250,7 +220,6 @@ $('.astrosBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -271,7 +240,6 @@ $('.royalsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -283,10 +251,6 @@ $('.royalsBT').click(function() {
 });
 ///////////////
 
-$('.RoyalsBTRemove').click(function() {
-	console.log('You Removed It');
-});
-
 ///////////////Los Angeles Angels Been There Button
 $('.angelsBT').click(function() {
 
@@ -296,7 +260,6 @@ $('.angelsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -317,7 +280,6 @@ $('.dodgersBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -338,7 +300,6 @@ $('.marlinsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -359,7 +320,6 @@ $('.brewersBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -380,7 +340,6 @@ $('.twinsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -401,7 +360,6 @@ $('.metsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -422,7 +380,6 @@ $('.yankeesBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -443,7 +400,6 @@ $('.athleticsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -464,7 +420,6 @@ $('.philliesBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -485,7 +440,6 @@ $('.piratesBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -506,7 +460,6 @@ $('.padresBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -527,7 +480,6 @@ $('.giantsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -548,7 +500,6 @@ $('.marinersBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -569,7 +520,6 @@ $('.cardinalsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -590,7 +540,6 @@ $('.raysBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -611,7 +560,6 @@ $('.rangersBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -622,7 +570,6 @@ $('.rangersBT').click(function() {
 	console.log('You Added It');
 });
 ///////////////
-
 
 ///////////////Toronto Blue Jays Been There Button
 $('.bluejaysBT').click(function() {
@@ -633,7 +580,6 @@ $('.bluejaysBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
@@ -645,6 +591,7 @@ $('.bluejaysBT').click(function() {
 });
 ///////////////
 
+
 ///////////////Washington Nationals Been There Button
 $('.nationalsBT').click(function() {
 
@@ -654,7 +601,6 @@ $('.nationalsBT').click(function() {
 		success: function(stadium) {
 			var user = Parse.User.current();
 			var relation = user.relation('BTstadiums');
-			console.log(stadium);
 
 			relation.add(stadium);
 			user.save();
