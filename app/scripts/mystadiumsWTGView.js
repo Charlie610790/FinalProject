@@ -67,7 +67,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
             relation.remove(stadium);
             user.save().done(function(){
-            window.location.replace('http://localhost:9000/beenThere.html');
+            window.location.replace('http://localhost:9000/bucketList.html');
 
             });
         },
@@ -86,7 +86,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -105,7 +105,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -124,7 +124,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -143,7 +143,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -162,7 +162,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -181,7 +181,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -200,7 +200,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -219,7 +219,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -238,7 +238,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -257,7 +257,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -276,7 +276,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -295,7 +295,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -314,7 +314,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -333,7 +333,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -352,7 +352,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -371,7 +371,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -390,7 +390,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -409,7 +409,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -428,7 +428,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -447,7 +447,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -466,7 +466,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -485,7 +485,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -504,7 +504,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -523,7 +523,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -542,7 +542,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -561,7 +561,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -580,7 +580,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -599,7 +599,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -618,7 +618,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -637,7 +637,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -656,7 +656,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -675,7 +675,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -694,7 +694,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },
@@ -713,7 +713,7 @@ var MyStadiumsWTGView = Parse.View.extend({
 
                 relation.remove(stadium);
                 user.save().done(function(){
-                window.location.replace('http://localhost:9000/beenThere.html');
+                window.location.replace('http://localhost:9000/bucketList.html');
 
                 });
             },

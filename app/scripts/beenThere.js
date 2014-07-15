@@ -1,14 +1,12 @@
 'use strict';
 
 $('.beenThereButton').click(function() {
-  	$( this ).toggleClass('onMyStadiumList').text('On My Stadium List');
-
-});
+		$( this ).toggleClass('onMyStadiumList').text('On My Stadium List');
+    });
 
 $('.onMyBucketList').click(function() {
-  	$( this ).toggleClass('wantToGoButton').text('Been There');
-
-});
+	  	  $( this ).toggleClass('wantToGoButton').text('Been There');
+    	});
 
 
 ///////////////Arizona Diamondbacks Been There Button
@@ -611,3 +609,100 @@ $('.nationalsBT').click(function() {
 	console.log('You Added It');
 });
 ///////////////
+///////////////
+///NFL
+//////////////
+///////////////Atlanta Falcons Want To Go Button
+$('.falconsBT').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("LurGDdFPVp", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("BTstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////Green Bay Packers Want To Go Button
+$('.packersBT').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("MlKK2jtNj8", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("BTstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////New York Giants Want To Go Button
+$('.nygiantsBT').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("D9V0N8VO8N", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("BTstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////Tampa Bay Buccaneers Want To Go Button
+$('.buccaneersBT').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("Ko7EBJBPdj", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("BTstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+
+///////////////
+///NBA
+//////////////
+///////////////Atlanta Falcons Want To Go Button
+$('.heatBT').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("k1sqDuziT8", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("BTstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});

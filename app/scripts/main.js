@@ -27,25 +27,25 @@ var stadiumCollection = new StadiumCollection();
 $('.signupButton').click(function() {
 	var user = new Parse.User();
 
-	var username = 	$('#userName').val();
-	var password = 	$('#password').val();
-	var email 	 = 	$('#email').val();
+	var username =	$('#userName').val();
+	var password =	$('#password').val();
+	var email	 =	$('#email').val();
 
 	user.set({
-	'username' :  username,
-	'password' :  password,
-	'email'    :  email,
-	'Avatar'   :  "../images/avatarPlaceholder.jpg"
+		'username' :  username,
+		'password' :  password,
+		'email'    :  email,
+		'Avatar'   :  '../images/avatarPlaceholder.jpg'
 	});
 
 	user.signUp(null, {
-  	success: function(user) {
-	window.location.replace("http://localhost:9000/home.html");
-  	},
-  	error: function(user, error) {
+	  success: function(user) {
+		window.location.replace('http://localhost:9000/home.html');
+  	  },
+  	  error: function(user, error) {
     // Show the error message somewhere and let the user try again.
-    alert("Error: " + error.code + " " + error.message);
-  	}
+    	alert('Error: ' + error.code + ' '  + error.message);
+	  }
 	});
 
 	console.log('It Worked!');
@@ -55,12 +55,13 @@ $('.signupButton').click(function() {
 ///////////////Login Button
 
 $('.loginButton').click(function() {
-	var username = 	$('#userName').val();
-	var password = 	$('#password').val();
+	var username =	$('#userName').val();
+	var password =	$('#password').val();
 	Parse.User.logIn(username, password, {
-  	success: function(user) {
-	window.location.replace("http://localhost:9000/home.html")  	},
-  	error: function(user, error) {
+	success: function(user) {
+		window.location.replace('http://localhost:9000/home.html')  	
+	},
+	error: function(user, error) {
     // The login failed. Check error to see why.
   	}
 
@@ -73,7 +74,7 @@ $('.loginButton').click(function() {
 
 $('.logoutButton').click(function() {
 	Parse.User.logOut();
-	window.location.replace("http://localhost:9000/index.html");
+	window.location.replace('http://localhost:9000/index.html');
 	console.log('You Logged Out');
 });
 ///////////////
