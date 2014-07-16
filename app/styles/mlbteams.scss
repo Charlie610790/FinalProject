@@ -520,6 +520,7 @@
         margin-top: 90px;
         height: 70px;
         width: 70px;
+        background-size: 70px 70px;
     }
 
     .whitesoxLogo {
@@ -552,7 +553,7 @@
 
     .yankeesLogo {
         background-size: 70px 70px;
-}
+    }
 
     .philliesLogo {
         background-size: 70px 70px;
@@ -560,5 +561,12 @@
 
     .piratesLogo {
         background-size: 70px 70px;
+    }
+
+    .removeMobile {
+        line-height: 50px; 
+        font-size: 15px; 
+        height: 50px; 
+        width: 70px; 
     }
 }
