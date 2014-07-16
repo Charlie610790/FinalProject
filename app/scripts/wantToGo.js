@@ -10,6 +10,28 @@ $('.onMyBucketList').click(function() {
 
 });
 
+///////////////
+///SPRING TRAINING BASEBALL
+///////////////Greenville Drive Want To Go Button
+$('.redsoxSTWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("G2SWO8UzeQ", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////
+
 
 ///////////////
 ///A BASEBALL

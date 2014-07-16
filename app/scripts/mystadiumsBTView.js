@@ -45,6 +45,8 @@ var MyStadiumsBTView = Parse.View.extend({
         'click .DriveBTRemove'                     : 'DriveBTRemove',
         'click .TouristsBTRemove'                  : 'TouristsBTRemove',
         'click .RiverdogsBTRemove'                 : 'RiverdogsBTRemove',
+        //Spring Training Baseball Teams
+        'click .RedSoxSTBTRemove'                  : 'RedSoxSTBTRemove',
         //NBA Basketball Teams
         'click .HeatBTRemove'                      : 'HeatBTRemove',
         //NFL Football Teams
@@ -66,6 +68,25 @@ var MyStadiumsBTView = Parse.View.extend({
     render: function(){
         var renderedTemplate = this.myStadiumsBTTemplate(this.model);
         this.$el.html(renderedTemplate);
+    },
+
+    RedSoxSTBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('G2SWO8UzeQ', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('BTstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/beenThere.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
     },
 
     DiamondbacksBTRemove: function(){

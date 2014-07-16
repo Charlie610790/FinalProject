@@ -45,6 +45,8 @@ var MyStadiumsWTGView = Parse.View.extend({
         'click .DriveWTGRemove'                     : 'DriveWTGRemove',
         'click .TouristsWTGRemove'                  : 'TouristsWTGRemove',
         'click .RiverdogsWTGRemove'                 : 'RiverdogsWTGRemove',
+        //A Spring Training Teams
+        'click .RedSoxSTWTGRemove'                  : 'RedSoxSTWTGRemove',
         //NBA Basketball Teams
         'click .HeatWTGRemove'                      : 'HeatWTGRemove',
         //NFL Football Teams
@@ -72,6 +74,25 @@ var MyStadiumsWTGView = Parse.View.extend({
         var StadiumBT = Parse.Object.extend('StadiumWTG');
         var query = new Parse.Query(Stadium);
         query.get('qkPUmHn2Yr', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('WTGstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/bucketList.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
+    },
+
+    RedSoxSTWTGRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumWTG');
+        var query = new Parse.Query(Stadium);
+        query.get('G2SWO8UzeQ', {
         success: function(stadium) {
             var user = Parse.User.current();
             var relation = user.relation('WTGstadiums');
