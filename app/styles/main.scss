@@ -447,20 +447,20 @@ margin-left: 28%;
 .myStadiums {
     padding-top: 50px;
     background-size: cover;
-    background-image: url("http://upload.wikimedia.org/wikipedia/commons/0/01/Fenway_from_Legend's_Box.jpg");
+    background-image: url("../images/Stadiums/FenwayPark.jpg");
     cursor: pointer;
 }
 
 .baseball {
     background-size: cover;
-    background-image: url("http://www.cookandsonbats.com/panoramas/turner/turner-101.jpg");
+    background-image: url("../images/Stadiums/TurnerField.jpg");
     cursor: pointer;
     padding-top: 5px;
 }
 
 .football {
     background-size: cover;
-    background-image: url("http://www.nflwallpaperhd.com/wp-content/uploads/2013/10/Atlanta-Falcons-Stadium-.jpg");
+    background-image: url("../images/Stadiums/GeorgiaDome.jpg");
     cursor: pointer;    
     padding-top: 5px;
     border-bottom: none;
@@ -468,9 +468,17 @@ margin-left: 28%;
 
 .basketball {
     background-size: cover;
-    background-image: url("http://thesportsfather.files.wordpress.com/2012/05/img_0792.jpg");
+    background-image: url("../images/Stadiums/AmericanAirlinesArena.jpg");
     cursor: pointer;     
     padding-top: 5px;
+}
+
+.nearmeImage {
+    background-size: cover;
+    background-image: url("../images/Stadiums/GlobeLifeParkinArlington.jpg");
+    cursor: pointer;    
+    padding-top: 5px;
+    border-bottom: none;
 }
 
 .sportHeader {
@@ -769,6 +777,14 @@ margin-left: 28%;
     font-weight: 700;
     margin-left: 10px;
     color: white;
+}
+
+.nearmeButton {
+    height: 200px;
+}
+
+.nearmeButtonText {
+    margin-top: 150px;
 }
 
 @media screen and (max-width: 380px) {
