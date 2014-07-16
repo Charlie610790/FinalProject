@@ -1,10 +1,10 @@
 <!DOCTYPE html><html class=no-js><head><meta charset=utf-8><title>Field Hopper</title><meta name=description content=""><meta name=viewport content="width=device-width"><link rel="shortcut icon" href=/6df2b309.favicon.ico><!-- Place favicon.ico and apple-touch-icon.png in the root directory --><link rel=stylesheet href=styles/8bd14774.main.css><script src=scripts/vendor/fc266b91.modernizr.js></script><body><!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]--><div class=container><div class=header><div class=logo></div></div><div class=centerContainer><div class=userBarIndex></div><div class=sportHeader>Been There</div><div class=myStadiumsBTContainer></div></div><div class=footer><div class=footerText>&#169; 2014 Charles M. Jones</div><div class=logoutButton>Logout</div></div></div><script type=text/template class=userBarTemplate><div class="backIndex">
+        <![endif]--><div class=container><div class=header><div class=logo></div></div><div class=centerContainer><div class=userBarIndex></div><div class=sportHeader>My Bucket List</div><div class=myStadiumsWTGContainer></div></div><div class=footer><div class=footerText>&#169; 2014 Charles M. Jones</div><div class=logoutButton>Logout</div></div></div><script type=text/template class=userBarTemplate><div class="backIndex">
                 <a href="javascript:history.back()">Back</a>
             </div>
             <div class="usernameIndex"><a href="profile.html"><%= username %></a></div>
-            <div class="userAvatarIndex"><a href="profile.html"><img src="<%= Avatar %>" width="25px" height="25px"></a></div></script><script type=text/template class=myStadiumsBTTemplate><div class="teamImage" style="background-image: url('<%= StadiumPic %>')">
+            <div class="userAvatarIndex"><a href="profile.html"><img src="<%= Avatar %>" width="25px" height="25px"></a></div></script><script type=text/template class=myStadiumsWTGTemplate><div class="teamImage" style="background-image: url('<%= StadiumPic %>')">
                 <div class="left">    
                     <div class="lefttop">
                         <div class="teamCity"><a href="<%= StadiumPageLink %>"><%= CityName %></a></div>
@@ -12,11 +12,11 @@
                         <div class="stadiumName"><a href="<%= StadiumPageLink %>"><%= StadiumName %></a></div> 
                     </div>
                     <div class="leftbottom">
-                        <a href="<%= StadiumPageLink %>"><div class="heatLogo logoMobile LogoFix" style="background-image: url('<%= TeamLogo %>')"></div></a>
+                        <a href="<%= StadiumPageLink %>"><div class="heatLogo logoMobile" style="background-image: url('<%= TeamLogo %>'); background-size: 100px 100px;"></div></a>
                     </div>
                 </div>
                 <div class="right">
-                        <div class="<%= TeamNameNS %>BTRemove beenThereButton teamsMobileButtons removeMobile">Remove</div>
+                        <div class="<%= TeamNameNS %>WTGRemove beenThereButton teamsMobileButtons">Remove</div>
                 </div>   
             </div></script><script src=scripts/4776dee8.vendor.js></script><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
