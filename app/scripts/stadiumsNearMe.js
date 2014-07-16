@@ -33,12 +33,24 @@ var StadiumNearMeView = Parse.View.extend({
     var query = new Parse.Query(Stadium);
     query.near("GeoLocation", userGeoPoint);
     // Limit what could be a lot of points.
-    query.limit(3);
+    query.limit(30);
     // Final list of objects
     query.find({
         success: function(stadiums) {
-                stadiums.forEach(function(stadium){
-                    new StadiumNearMeView({model: stadium.attributes})
-                });
-            }
+            stadiums.forEach(function(stadium){
+                var TeamName = stadium.get('TeamName');
+                var CityName = stadium.get('CityName');
+                var Sport    = stadium.get('Sport');
+                var GeoLocal = stadium.get('GeoLocation');
+                console.log(userGeoPoint)
+                new StadiumNearMeView({model: stadium})
+                console.log(userGeoPoint.milesTo(GeoLocal));
+                console.log(CityName);
+                console.log(Sport);
+                
+
+            });
+        }
     });
+
+    

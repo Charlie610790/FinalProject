@@ -44,6 +44,8 @@
             </div>
         </div>
 
+        
+
         <script type="text/template" class="userBarTemplate">
             <div class="backIndex">
                 <a href="javascript:history.back()">Back</a>
@@ -52,8 +54,14 @@
             <div class="userAvatarIndex"><a href="profile.html"><img src="<%= Avatar %>" width="25px" height="25px"></a></div>
         </script>
 
-        <script type="text/template" class="stadiumsnearmeTemplate">                    
-            <img src="<%= TeamLogo %>" width="25px" height="25px"></a>
+        <script type="text/template" class="stadiumsnearmeTemplate">
+            <div class="nearMeContainer">
+                <div class="nearMeLogo"><a href="<%= StadiumPageLink %>"><img src="<%= TeamLogo %>" width="100px" height="100px"></a>        
+                </div>
+                <div class="nearMeCityName"><a href="<%= StadiumPageLink %>"><%= CityName %></a></div>
+                <div class="nearMeTeamName"><a href="<%= StadiumPageLink %>"><%= TeamName %></a></div>
+                <div class="nearMeDistance"><a href="<%= StadiumPageLink %>"><%= userGeoPoint.milesTo(GeoLocation).toFixed(2) %> miles</a></div>
+            </div>
         </script>
 
 
