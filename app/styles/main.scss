@@ -136,15 +136,21 @@ a {
 
 
 .profileBeenTo {
+    margin: 0px auto;
     display: block;
     background-color: #99bda1;
     min-height: 100px;
+    width: 100%;
+    max-width: 790px;
 }
 
 .profileWantToGo {
+    margin: 0px auto;
     display: block;
     background-color: #99bda1;
     min-height: 100px;
+    width: 100%;
+    max-width: 790px;
 }
 
 .profileMyStadiums {
@@ -228,7 +234,7 @@ a {
     }
 }
 
-.landginButtonLeft {
+.landingButtonLeft {
 margin-left: 28%;
 }
 
@@ -772,9 +778,6 @@ margin-left: 28%;
         width: 50px;
     }
 
-
-
-
     .userBarIndex {
         width: 100%;
     }
@@ -854,6 +857,23 @@ margin-left: 28%;
 
     .teamsMobileButtons {
         margin-top: 240px;
+    }
+
+    .landingButtons {
+        display: block;
+        width: 250px;
+    }
+
+    .landingButtonLeft {
+        margin-left: 0;
+    }
+
+    .profileBeenTo {
+        max-width: 270px;
+    }
+
+    .profileWantToGo {
+        max-width: 270px;
     }
 
 }
