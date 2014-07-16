@@ -43,7 +43,7 @@
     display: inline-block;
     height: 100px;
     width: 100px;
-    margin-top: 70px;
+    margin-top: 20px;
     margin-left: 0px;
     background-size: cover;
     background-image: url("../images/logos/buccaneerslogo.png");
@@ -89,5 +89,9 @@
     .buccaneersmobile {
         margin-top: 70px;
 
+    }
+
+    .logoTeamPage {
+        background-size: 40px 40px;
     }
     }

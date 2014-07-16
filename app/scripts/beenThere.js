@@ -49,6 +49,26 @@ $('.touristsBT').click(function() {
 });
 ///////////////
 
+///////////////Charleston River Dogs Been There Button
+$('.riverdogsBT').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("dfHBAORDeQ", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("BTstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////
+
 ///////////////
 ///MLB
 ///////////////Arizona Diamondbacks Been There Button

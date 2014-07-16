@@ -51,6 +51,25 @@ $('.touristsWTG').click(function() {
 	console.log('You Added It');
 });
 ///////////////
+///////////////Charleston River Dogs Want To Go Button
+$('.riverdogsWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("dfHBAORDeQ", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////
 
 
 ///////////////
