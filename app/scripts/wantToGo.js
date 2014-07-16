@@ -32,6 +32,25 @@ $('.driveWTG').click(function() {
 	console.log('You Added It');
 });
 ///////////////
+///////////////Asheville Tourists Want To Go Button
+$('.touristsWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("PWVjqVZ9Sv", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////
 
 
 ///////////////

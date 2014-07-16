@@ -29,6 +29,25 @@ $('.driveBT').click(function() {
 	console.log('You Added It');
 });
 ///////////////
+///////////////Asheville Tourists Been There Button
+$('.touristsBT').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("PWVjqVZ9Sv", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("BTstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////
 
 ///////////////
 ///MLB

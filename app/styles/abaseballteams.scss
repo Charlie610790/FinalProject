@@ -21,6 +21,23 @@
     cursor: pointer;
 }
 
+.touristsLogo {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin-top: 70px;
+    margin-left: 0px;
+    background-size: 100px 100px;
+    background-image: url("../images/logos/touristslogo.png");
+}
+
+.tourists {
+    padding-top: 5px;
+    background-size: cover;
+    background-image: url("../images/Stadiums/McCormickField.jpg");
+    cursor: pointer;
+}
+
 
 
 @media screen and (max-width: 380px) {
