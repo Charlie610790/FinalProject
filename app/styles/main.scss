@@ -11,7 +11,6 @@ body {
 a {
     color: white;
     text-decoration: none
-
 }
 
 .stadiumsnearmeBody {
@@ -249,12 +248,10 @@ a {
     text-align: center;
     color: #00390c;
     margin: 0px auto;
-
 }
 
 .landingHeader {
     padding-top: 65px;
-
 }
 
 .landingButtons {
@@ -293,7 +290,7 @@ a {
 }
 
 .landingButtonLeft {
-margin-left: 28%;
+    margin-left: 28%;
 }
 
 .landingButtonsTop {
@@ -303,8 +300,6 @@ margin-left: 28%;
 .landingButtonsBottom {
     width: 210px;
 }
-
-
 
 .homeContainer {
     margin-top: 100px;
@@ -349,7 +344,6 @@ margin-left: 28%;
     height: 60px;
     background-color: gray;
 }
-
 
 .userAvatarIndex {
     float: right;
@@ -637,8 +631,6 @@ margin-left: 28%;
         -o-filter: brightness(120%);
         filter: brightness(120%);
     }
-
-
 }
 
 .onMyBucketList {
@@ -798,14 +790,12 @@ margin-left: 28%;
 }
 
 @media screen and (max-width: 380px) {
-
     .driveLogo {
         background-size: 70px 70px;
     }
 
     .packersLogo {
         background-size: 70px 70px;
-
     }
 
     .nyGiantsLogo {    
@@ -899,7 +889,6 @@ margin-left: 28%;
         margin-top: 140px;
         text-align: center;
         font-size: 20px;
-        
     }
 
     .beenThereButton {
@@ -912,7 +901,6 @@ margin-left: 28%;
         color: white;
         text-align: center;
         font-size: 20px;
-        
     }
 
     .teamMap {        
@@ -940,9 +928,9 @@ margin-left: 28%;
     }
 
     .landingButtonLeft {
-    margin: 0px auto;
-    margin-bottom: 15px;
-    margin-top: 15px;
+        margin: 0px auto;
+        margin-bottom: 15px;
+        margin-top: 15px;
     }
 
     .profileBeenTo {
@@ -952,6 +940,7 @@ margin-left: 28%;
     .profileWantToGo {
         max-width: 270px;
     }
+
     .nearMeContainer {
         width: 300px;
     }
@@ -1002,6 +991,5 @@ margin-left: 28%;
 
     .buccaneersLogoPageFix {
         margin-top: 0px;
-
     }
 }
