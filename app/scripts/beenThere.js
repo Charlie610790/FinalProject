@@ -10,12 +10,52 @@ $('.onMyBucketList').click(function() {
 
 ///////////////
 ///SPRING TRAINING BASEBALL
-///////////////Greenville Drive Been There Button
+///////////////Red Sox Spring Training Been There Button
 $('.redsoxSTBT').click(function() {
 
 	var Stadium = Parse.Object.extend("Stadium");
 	var query = new Parse.Query(Stadium);
 	query.get("G2SWO8UzeQ", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("BTstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+
+$('.piratesSTBT').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("fiPiD7PFO6", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("BTstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////
+
+///////////////
+///AAA BASEBALL
+///////////////Greenville Drive Been There Button
+$('.knightsBT').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("QgkAL4tb5n", {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("BTstadiums");
@@ -77,6 +117,26 @@ $('.riverdogsBT').click(function() {
 	var Stadium = Parse.Object.extend("Stadium");
 	var query = new Parse.Query(Stadium);
 	query.get("dfHBAORDeQ", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("BTstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+///////////////
+
+///////////////Mrtyle Beach Pelicans Been There Button
+$('.pelicansBT').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("7Fln3rA7fk", {
 	  success: function(stadium) {
 		var user = Parse.User.current();
 		var relation = user.relation("BTstadiums");

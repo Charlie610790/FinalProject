@@ -41,12 +41,16 @@ var MyStadiumsBTView = Parse.View.extend({
         'click .RangersBTRemove'                   : 'RangersBTRemove',
         'click .BlueJaysBTRemove'                  : 'BlueJaysBTRemove',
         'click .NationalsBTRemove'                 : 'NationalsBTRemove',
+        //AAA Baseball Teams
+        'click .KnightsBTRemove'                   : 'KnightsBTRemove',
         //A Baseball Teams
         'click .DriveBTRemove'                     : 'DriveBTRemove',
         'click .TouristsBTRemove'                  : 'TouristsBTRemove',
         'click .RiverdogsBTRemove'                 : 'RiverdogsBTRemove',
+        'click .PelicansBTRemove'                  : 'PelicansBTRemove',
         //Spring Training Baseball Teams
         'click .RedSoxSTBTRemove'                  : 'RedSoxSTBTRemove',
+        'click .PiratesSTBTRemove'                 : 'PiratesSTBTRemove',
         //NBA Basketball Teams
         'click .HeatBTRemove'                      : 'HeatBTRemove',
         //NFL Football Teams
@@ -74,6 +78,63 @@ var MyStadiumsBTView = Parse.View.extend({
         var StadiumBT = Parse.Object.extend('StadiumBT');
         var query = new Parse.Query(Stadium);
         query.get('G2SWO8UzeQ', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('BTstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/beenThere.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
+    },
+
+    KnightsBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('QgkAL4tb5n', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('BTstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/beenThere.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
+    },
+
+    PiratesSTBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('fiPiD7PFO6', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('BTstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/beenThere.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
+    },
+
+    PelicansBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('7Fln3rA7fk', {
         success: function(stadium) {
             var user = Parse.User.current();
             var relation = user.relation('BTstadiums');

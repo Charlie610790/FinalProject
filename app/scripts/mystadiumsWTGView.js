@@ -41,12 +41,16 @@ var MyStadiumsWTGView = Parse.View.extend({
         'click .RangersWTGRemove'                   : 'RangersWTGRemove',
         'click .BlueJaysWTGRemove'                  : 'BlueJaysWTGRemove',
         'click .NationalsWTGRemove'                 : 'NationalsWTGRemove',
+        //AAA Baseball Teams
+        'click .KnightsWTGRemove'                   : 'KnightsWTGRemove',
         //A Baseball Teams
         'click .DriveWTGRemove'                     : 'DriveWTGRemove',
         'click .TouristsWTGRemove'                  : 'TouristsWTGRemove',
         'click .RiverdogsWTGRemove'                 : 'RiverdogsWTGRemove',
+        'click .PelicansWTGRemove'                  : 'PelicansWTGRemove',
         //A Spring Training Teams
         'click .RedSoxSTWTGRemove'                  : 'RedSoxSTWTGRemove',
+        'click .PiratesSTWTGRemove'                 : 'PiratesSTWTGRemove',
         //NBA Basketball Teams
         'click .HeatWTGRemove'                      : 'HeatWTGRemove',
         //NFL Football Teams
@@ -74,6 +78,63 @@ var MyStadiumsWTGView = Parse.View.extend({
         var StadiumBT = Parse.Object.extend('StadiumWTG');
         var query = new Parse.Query(Stadium);
         query.get('qkPUmHn2Yr', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('WTGstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/bucketList.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
+    },
+
+    PiratesSTWTGRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumWTG');
+        var query = new Parse.Query(Stadium);
+        query.get('fiPiD7PFO6', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('WTGstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/bucketList.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
+    },
+
+    KnightsWTGRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumWTG');
+        var query = new Parse.Query(Stadium);
+        query.get('QgkAL4tb5n', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('WTGstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/bucketList.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
+    },
+
+    PelicansWTGRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumWTG');
+        var query = new Parse.Query(Stadium);
+        query.get('7Fln3rA7fk', {
         success: function(stadium) {
             var user = Parse.User.current();
             var relation = user.relation('WTGstadiums');
