@@ -50,6 +50,7 @@ var MyStadiumsBTView = Parse.View.extend({
         'click .PelicansBTRemove'                  : 'PelicansBTRemove',
         //Spring Training Baseball Teams
         'click .RedSoxSTBTRemove'                  : 'RedSoxSTBTRemove',
+        'click .YankeesSTBTRemove'                 : 'YankeesSTBTRemove',
         'click .PiratesSTBTRemove'                 : 'PiratesSTBTRemove',
         //NBA Basketball Teams
         'click .HeatBTRemove'                      : 'HeatBTRemove',
@@ -97,6 +98,25 @@ var MyStadiumsBTView = Parse.View.extend({
         var StadiumBT = Parse.Object.extend('StadiumBT');
         var query = new Parse.Query(Stadium);
         query.get('QgkAL4tb5n', {
+        success: function(stadium) {
+            var user = Parse.User.current();
+            var relation = user.relation('BTstadiums');
+
+            relation.remove(stadium);
+            user.save().done(function(){
+            window.location.replace('http://localhost:9000/beenThere.html');
+
+            });
+        },
+        error: function(object, error) {
+        }
+        });
+    },
+
+    YankeesSTBTRemove: function(){
+        var StadiumBT = Parse.Object.extend('StadiumBT');
+        var query = new Parse.Query(Stadium);
+        query.get('eAKaNf49Pi', {
         success: function(stadium) {
             var user = Parse.User.current();
             var relation = user.relation('BTstadiums');

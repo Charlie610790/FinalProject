@@ -31,6 +31,24 @@ $('.redsoxSTWTG').click(function() {
 	console.log('You Added It');
 });
 
+$('.yankeesSTWTG').click(function() {
+
+	var Stadium = Parse.Object.extend("Stadium");
+	var query = new Parse.Query(Stadium);
+	query.get("eAKaNf49Pi", {
+	  success: function(stadium) {
+		var user = Parse.User.current();
+		var relation = user.relation("WTGstadiums");
+
+		relation.add(stadium);
+		user.save();
+	  },
+	  error: function(object, error) {
+	  }
+	});	
+	console.log('You Added It');
+});
+
 $('.piratesSTWTG').click(function() {
 
 	var Stadium = Parse.Object.extend("Stadium");
