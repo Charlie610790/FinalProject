@@ -467,6 +467,7 @@ a {
     margin-right: 15px;
     float: right;
     text-shadow: 2px 2px 2px #5E626B;
+    background-color: rgba(202, 202, 202, 0.2);
 }
 
 .myStadiums {
@@ -585,6 +586,8 @@ a {
     font-size: 25px;
     text-shadow: 2px 2px 2px #5E626B;
     cursor: pointer;
+    background-color: rgba(202, 202, 202, 0.2);
+
 
     &:hover {
         text-decoration: underline;
@@ -597,6 +600,7 @@ a {
     margin-left: 4px;
     text-shadow: 2px 2px 2px #5E626B;
     cursor: pointer;
+    background-color: rgba(202, 202, 202, 0.2);
 
     &:hover {
         text-decoration: underline;
@@ -618,6 +622,7 @@ a {
     max-width: 500px;
     margin-bottom: 20px;
     cursor: pointer;
+    background-color: rgba(202, 202, 202, 0.2);
 
     &:hover {
         text-decoration: underline;
