@@ -466,10 +466,15 @@ a {
 }
 
 .myStadiums {
-    padding-top: 50px;
+    padding-top: 0px;
     background-size: cover;
+    height: 150px;
     background-image: url("../images/Stadiums/FenwayPark.jpg");
     cursor: pointer;
+}
+
+.myStadiumsSportsText {
+    margin-top: 100px;
 }
 
 .baseball {
@@ -495,10 +500,10 @@ a {
 }
 
 .nearmeImage {
+    padding-top: 200px;
     background-size: cover;
     background-image: url("../images/Stadiums/GlobeLifeParkinArlington.jpg");
     cursor: pointer;    
-    padding-top: 5px;
     border-bottom: none;
 }
 
@@ -868,6 +873,15 @@ a {
         margin-right: 10px;
         float: right;
         text-shadow: 2px 2px 2px #5E626B;
+    }
+
+    .nearmeButtonText {
+        margin-top: 150px;
+    }
+
+    .myStadiumsSportsText {
+        margin-top: 100px;
+
     }
 
     .centerContainer {
