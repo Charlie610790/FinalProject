@@ -13,8 +13,49 @@ a {
     text-decoration: none
 }
 
+.about {
+    padding-top: 30px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.aboutBody {
+    font-size: 16px;
+    padding: 50px;
+    padding-top: 20px;
+    font-family: Helvetica;
+    letter-spacing: 1px;
+
+}
+
+.aboutPic {
+    width: 800px;
+    height: 600px;
+    background-size: 800px 600px;
+    margin: 0px auto;
+    background-image: url("../images/aboutMe.jpg");
+}
+
+.aboutLogo {
+    width: 800px;
+    height: 600px;
+    background-size: 800px 600px;
+    margin: 0px auto;
+    background-image: url("../images/aboutMe.jpg");
+}
+
 .stadiumsnearmeBody {
     display: block;
+}
+
+.aboutFieldHopperPic {
+    margin: 0px auto;
+    height: 200px;
+    width: 200px;
+    background-size: 200px 200px;
+    margin-top: 30px;
+    background-image: url("../images/FieldHopperLogo.png");
+    margin-bottom: -50px;
 }
 
 .nearMeContainer {
