@@ -411,10 +411,10 @@ a {
     display: inline-block;
     float: left;
     margin-left: 25px;
-    height: 70px;
+    height: 60px;
     width: 200px;
-    background-size: 200px 70px;
-    margin-top: 5px;
+    background-size: 200px 60px;
+    margin-top: 10px;
     margin-right: 20px;
     // font-size: 32px;
     // color: white;
@@ -456,6 +456,10 @@ a {
     color: white;
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
     border-bottom: 10px solid #5a715f;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 .sportsText {
@@ -564,6 +568,10 @@ a {
     color: white;
     text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
     border-bottom: 10px solid #5a715f;
+
+    &:hover {
+        opacity: 0.7;
+    }
 }
 
 .teamPage {
