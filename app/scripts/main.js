@@ -1,6 +1,6 @@
 'use strict';
 
-Parse.initialize('EqWIGNej8qO65jxtkm5clG2mPEdVhCvj0EvlF5El', '6SYAg7C95UgX6fLaY5vjDJnxyAFXn58q7ezl0u13');
+// Parse.initialize('EqWIGNej8qO65jxtkm5clG2mPEdVhCvj0EvlF5El', '6SYAg7C95UgX6fLaY5vjDJnxyAFXn58q7ezl0u13');
 
 var User = Parse.Object.extend ({
 	className: 'User'
@@ -40,7 +40,7 @@ $('.signupButton').click(function() {
 
 	user.signUp(null, {
 	  success: function(user) {
-		window.location.replace('http://localhost:9000/home.html');
+		window.location.replace('home.html');
   	  },
   	  error: function(user, error) {
     // Show the error message somewhere and let the user try again.
