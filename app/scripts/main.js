@@ -1,5 +1,5 @@
 'use strict';
-
+debugger
 Parse.initialize('EqWIGNej8qO65jxtkm5clG2mPEdVhCvj0EvlF5El', '6SYAg7C95UgX6fLaY5vjDJnxyAFXn58q7ezl0u13');
 
 var User = Parse.Object.extend ({
